@@ -1,5 +1,5 @@
 {
-  "name": "fhir-gen",
+  "name": "@imaware/fhir-gen",
   "version": "0.0.1",
   "description": "Module for generating realistic FHIR test data.",
   "main": "dist/index.js",
