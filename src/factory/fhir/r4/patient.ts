@@ -15,12 +15,12 @@ export const patientFactory = Factory.define<R4.IPatient>(
     // Default values, if any
     const {params} = opts;
     // Given name
-    let given = [name.firstName()] as string[];
+    const given = [name.firstName()] as string[];
     if (random.boolean()) {
       given.push(name.middleName());
     }
     // Contact points
-    let contactPoints = [] as R4.IContactPoint[];
+    const contactPoints = [] as R4.IContactPoint[];
     // // Email
     contactPoints.push({
       id: random.uuid(),
