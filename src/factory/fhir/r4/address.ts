@@ -14,7 +14,7 @@ export const addressFactory = Factory.define<R4.IAddress, R4.IAddress>(
     // Default values, if any
     const {params} = opts;
     const state = fakerAddress.state(true);
-    let addressLines = [] as string[];
+    const addressLines = [] as string[];
     // First Line
     addressLines.push(fakerAddress.streetAddress());
     // Second Line
