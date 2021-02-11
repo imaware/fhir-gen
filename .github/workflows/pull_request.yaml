@@ -50,5 +50,4 @@ jobs:
         run: yarn test
       # Test docs have been updated
       - id: check-docs
-        run: |
-          yarn test:doc || echo "Docs not up to date. Please run yarn build:doc to update docs."
+        run: yarn test:doc

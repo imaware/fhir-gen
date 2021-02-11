@@ -3,7 +3,7 @@
  *
  * @param anEnum - An enum to return a random value from.
  *
- * @returns {T[keyof T]} - A randomly selected enum
+ * @returns {T} - A randomly selected enum
  */
 export const randomEnum = <T>(anEnum: T): T[keyof T] => {
   const enumValues = (Object.values(anEnum) as unknown) as T[keyof T][];
