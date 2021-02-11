@@ -1,0 +1,49 @@
+name: Automerge Pull Requests
+on:
+  pull_request:
+    branches:
+      - develop
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+  pull_request_review:
+    branches:
+      - develop
+    types:
+      - submitted
+  check_suite:
+    branches:
+      - develop
+    types:
+      - completed
+  status:
+    branches:
+      - develop
+
+jobs:
+  automerge:
+    name: Automerge Dependabot
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: 'Wait for status checks'
+        id: waitforstatuschecks
+        uses: "WyriHaximus/github-action-wait-for-status@v1.3"
+        with:
+          ignoreActions: Automerge Dependabot
+          checkInterval: 15
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Merge pull requests
+        uses: pascalgn/automerge-action@v0.13.0
+        if: steps.waitforstatuschecks.outputs.status == 'success'
+        env:
+          MERGE_METHOD: "rebase"
+          MERGE_LABELS: "dependencies"
+          GITHUB_TOKEN: "${{ secrets.ACTIONS_TOKEN }}"
