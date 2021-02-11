@@ -23,6 +23,7 @@
     "prettier:fix": "prettier \"**/*.ts\" \"**/*.js\" --write",
     "eslint": "eslint --report-unused-disable-directives .",
     "eslint:fix": "eslint --report-unused-disable-directives . --fix",
+    "prepublish": "run-s clean build",
     "pretest": "run-s rebuild",
     "rebuild": "run-s lint:fix clean build",
     "test": "nyc mocha dist/__tests__/**.test.js --allow-console-logs",
@@ -58,7 +59,7 @@
     "typescript": "^4.1.5"
   },
   "files": [
-    "dist"
+    "dist/**"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@imaware"

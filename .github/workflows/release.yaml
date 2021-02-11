@@ -14,6 +14,10 @@ jobs:
         node-version: '12.x'
         registry-url: 'https://npm.pkg.github.com'
         scope: '@imaware'
+    - id: install
+      run: yarn install
+    - id: build
+      run: yarn prepublish
     - name: Semantic Release
       id: semantic
       uses: cycjimmy/semantic-release-action@v2
