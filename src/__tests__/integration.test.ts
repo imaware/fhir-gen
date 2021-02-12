@@ -1,19 +1,25 @@
 import {R4} from '@ahryman40k/ts-fhir-types';
 import {expect} from 'chai';
 import {
+  carePlanGenerator,
   diagnosticReportGenerator,
   observationGenerator,
   patientGenerator,
 } from '../generator';
 
 describe('Integration', () => {
-  it('correctly creates a diagnosticreport containing 3 observations for a patient', async () => {
+  it('correctly creates a diagnosticreport containing 3 observations for a patient with a careplan', async () => {
     const obs = [
       observationGenerator(1)[0],
       observationGenerator(1)[0],
       observationGenerator(1)[0],
     ];
     const pt = patientGenerator(1)[0];
+    const cp = carePlanGenerator(1, {
+      subject: {
+        reference: 'Patient' + '/' + pt.id,
+      } as R4.IReference,
+    })[0];
     const dr = diagnosticReportGenerator(1, {
       result: obs.map(
         (o: R4.IObservation): R4.IReference => {
@@ -25,10 +31,20 @@ describe('Integration', () => {
       subject: {
         reference: 'Patient' + '/' + pt.id,
       } as R4.IReference,
+      basedOn: [
+        {
+          reference: 'CarePlan' + '/' + cp.id,
+        },
+      ] as R4.IReference[],
     })[0];
     expect(dr.result?.length).to.equal(3);
     expect(dr.subject).to.deep.equal({
       reference: 'Patient' + '/' + pt.id,
     });
+    expect(dr.basedOn).to.deep.equal([
+      {
+        reference: 'CarePlan' + '/' + cp.id,
+      },
+    ]);
   });
 });

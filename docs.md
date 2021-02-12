@@ -10,6 +10,8 @@
 <dl>
 <dt><a href="#addressFactory">addressFactory</a> ⇒ <code>R4.IAddress</code></dt>
 <dd><p>Defines a Factory for generating FHIR Addresses.</p></dd>
+<dt><a href="#carePlanFactory">carePlanFactory</a> ⇒ <code>R4.ICarePlan</code></dt>
+<dd><p>Defines a Factory for generating FHIR CarePlans.</p></dd>
 <dt><a href="#diagnosticReportFactory">diagnosticReportFactory</a> ⇒ <code>R4.IDiagnosticReport</code></dt>
 <dd><p>Defines a Factory for generating FHIR DiagnosticReports.</p></dd>
 <dt><a href="#observationFactory">observationFactory</a> ⇒ <code>R4.IObservation</code></dt>
@@ -25,6 +27,8 @@
 <dd><p>Generic function for building a list of type T from a Factory.</p></dd>
 <dt><a href="#addressGenerator">addressGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IAddress&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Address objects.</p></dd>
+<dt><a href="#carePlanGenerator">carePlanGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICarePlan&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#diagnosticReportGenerator">diagnosticReportGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#observationGenerator">observationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IObservation&gt;</code></dt>
@@ -57,6 +61,20 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IAddress, R4.IAddress&gt;</code> | <p>Options for generating the Address object.</p> |
+
+<a name="carePlanFactory"></a>
+
+## carePlanFactory ⇒ <code>R4.ICarePlan</code>
+<p>Defines a Factory for generating FHIR CarePlans.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.ICarePlan</code> - <ul>
+<li>a FHIR CarePlan</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.ICarePlan, R4.ICarePlan&gt;</code> | <p>Options for generating the CarePlan object.</p> |
 
 <a name="diagnosticReportFactory"></a>
 
@@ -127,6 +145,21 @@
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR Addresses to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.IAddress&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="carePlanGenerator"></a>
+
+## carePlanGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ICarePlan&gt;</code>
+<p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.ICarePlan&gt;</code> - <ul>
+<li>The Array of FHIR DiagnosticReports.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR DiagnosticReports to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.ICarePlan&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="diagnosticReportGenerator"></a>
 
