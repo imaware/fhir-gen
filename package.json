@@ -25,6 +25,7 @@
     "eslint": "eslint --report-unused-disable-directives .",
     "eslint:fix": "eslint --report-unused-disable-directives . --fix",
     "prepare": "run-s clean build:prod",
+    "prepublish": "run-s prepare",
     "pretest": "run-s rebuild",
     "rebuild": "run-s lint:fix clean build:doc build",
     "test": "nyc mocha dist/__tests__/**.test.js --allow-console-logs",
