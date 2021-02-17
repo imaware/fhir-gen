@@ -2,7 +2,7 @@ name: Automerge Pull Requests
 on:
   pull_request:
     branches:
-      - develop
+      - master
     types:
       - labeled
       - unlabeled
@@ -14,17 +14,17 @@ on:
       - unlocked
   pull_request_review:
     branches:
-      - develop
+      - master
     types:
       - submitted
   check_suite:
     branches:
-      - develop
+      - master
     types:
       - completed
   status:
     branches:
-      - develop
+      - master
 
 jobs:
   automerge:
