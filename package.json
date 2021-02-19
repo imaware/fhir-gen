@@ -40,7 +40,7 @@
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.13",
-    "@babel/preset-typescript": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.17",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.14",
     "@types/faker": "^5.1.7",
