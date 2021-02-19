@@ -43,7 +43,7 @@
     "@babel/preset-typescript": "^7.12.13",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.14",
-    "@types/faker": "^5.1.6",
+    "@types/faker": "^5.1.7",
     "@types/mocha": "^8.2.1",
     "@types/node": "^14.14.30",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
