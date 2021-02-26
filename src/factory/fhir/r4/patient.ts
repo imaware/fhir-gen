@@ -26,7 +26,7 @@ export const patientFactory = Factory.define<R4.IPatient>(
       id: random.uuid(),
       system: 'email',
       value: internet.email(),
-      rank: contactPoints.length,
+      rank: contactPoints.length + 1,
     } as R4.IContactPoint);
     // // Phone (SMS)
     if (random.boolean()) {
@@ -34,7 +34,7 @@ export const patientFactory = Factory.define<R4.IPatient>(
         id: random.uuid(),
         system: 'sms',
         value: phone.phoneNumber('1##########'),
-        rank: contactPoints.length,
+        rank: contactPoints.length + 1,
       } as R4.IContactPoint);
     }
     // // Phone
@@ -43,7 +43,7 @@ export const patientFactory = Factory.define<R4.IPatient>(
         id: random.uuid(),
         system: 'phone',
         value: phone.phoneNumber('1##########'),
-        rank: contactPoints.length,
+        rank: contactPoints.length + 1,
       } as R4.IContactPoint);
     }
     return {

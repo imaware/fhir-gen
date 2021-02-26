@@ -27,6 +27,7 @@ export const carePlanFactory = Factory.define<R4.ICarePlan>(
       resourceType: 'CarePlan',
       id: random.uuid(),
       status: random.arrayElement(careplanStatuses),
+      intent: 'proposal',
       ...params,
     } as R4.ICarePlan;
   },
