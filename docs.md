@@ -20,6 +20,8 @@
 <dd><p>Defines a Factory for generating FHIR Observations.</p></dd>
 <dt><a href="#patientFactory">patientFactory</a> ⇒ <code>R4.IPatient</code></dt>
 <dd><p>Defines a Factory for generating FHIR Patients.</p></dd>
+<dt><a href="#planDefinitionFactory">planDefinitionFactory</a> ⇒ <code>R4.IPlanDefinition</code></dt>
+<dd><p>Defines a Factory for generating FHIR PlanDefinitions.</p></dd>
 </dl>
 
 ## Functions
@@ -32,13 +34,15 @@
 <dt><a href="#carePlanGenerator">carePlanGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICarePlan&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#careTeamGenerator">careTeamGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code></dt>
-<dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
+<dd><p>Creates an Array of size n containing FHIR CareTeam objects.</p></dd>
 <dt><a href="#diagnosticReportGenerator">diagnosticReportGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#observationGenerator">observationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IObservation&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Observation objects.</p></dd>
 <dt><a href="#patientGenerator">patientGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IPatient&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Patient objects.</p></dd>
+<dt><a href="#planDefinitionGenerator">planDefinitionGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IPlanDefinition&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR PlanDefinition objects.</p></dd>
 <dt><a href="#randomEnum">randomEnum(anEnum)</a> ⇒ <code>T</code></dt>
 <dd><p>Returns a random enum value.</p></dd>
 </dl>
@@ -143,6 +147,21 @@
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IPatient, R4.IPatient&gt;</code> | <p>Options for generating the Patient object.</p> |
 
+<a name="planDefinitionFactory"></a>
+
+## planDefinitionFactory ⇒ <code>R4.IPlanDefinition</code>
+
+<p>Defines a Factory for generating FHIR PlanDefinitions.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IPlanDefinition</code> - <ul>
+<li>a FHIR PlanDefinition</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IPlanDefinition, R4.IPlanDefinition&gt;</code> | <p>Options for generating the PlanDefinition object.</p> |
+
 <a name="common"></a>
 
 ## common(factory, n, params) ⇒ <code>Array.&lt;T&gt;</code>
@@ -193,16 +212,16 @@
 
 ## careTeamGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code>
 
-<p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p>
+<p>Creates an Array of size n containing FHIR CareTeam objects.</p>
 
 **Kind**: global function  
 **Returns**: <code>Array.&lt;R4.ICareTeam&gt;</code> - <ul>
-<li>The Array of FHIR DiagnosticReports.</li>
+<li>The Array of FHIR CareTeams.</li>
 </ul>  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| n | <code>number</code> | <p>The number of FHIR DiagnosticReports to generate.</p> |
+| n | <code>number</code> | <p>The number of FHIR CareTeams to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.ICareTeam&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="diagnosticReportGenerator"></a>
@@ -252,6 +271,22 @@
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR Patients to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.IPatient&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="planDefinitionGenerator"></a>
+
+## planDefinitionGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IPlanDefinition&gt;</code>
+
+<p>Creates an Array of size n containing FHIR PlanDefinition objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IPlanDefinition&gt;</code> - <ul>
+<li>The Array of FHIR PlanDefinitions.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR PlanDefinitions to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IPlanDefinition&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="randomEnum"></a>
 
