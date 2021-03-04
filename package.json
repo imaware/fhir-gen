@@ -81,6 +81,10 @@
       "yarn eslint:fix",
       "yarn prettier:fix"
     ],
+    "src/**/*.ts": [
+      "yarn eslint:fix",
+      "yarn prettier:fix"
+    ],
     "**.md": [
       "yarn mdlint:fix"
     ]
