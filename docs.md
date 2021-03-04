@@ -8,8 +8,14 @@
 ## Constants
 
 <dl>
+<dt><a href="#activityDefinitionFactory">activityDefinitionFactory</a> ⇒ <code>R4.IActivityDefinition</code></dt>
+<dd><p>Defines a Factory for generating FHIR ActivityDefinitions.</p></dd>
 <dt><a href="#addressFactory">addressFactory</a> ⇒ <code>R4.IAddress</code></dt>
 <dd><p>Defines a Factory for generating FHIR Addresses.</p></dd>
+<dt><a href="#bundleFactory">bundleFactory</a> ⇒ <code>R4.IBundle</code></dt>
+<dd><p>Defines a Factory for generating FHIR dBundlees.</p></dd>
+<dt><a href="#bundleEntryFactory">bundleEntryFactory</a> ⇒ <code>R4.IBundle_Entry</code></dt>
+<dd><p>Defines a Factory for generating FHIR Bundle Entries.</p></dd>
 <dt><a href="#carePlanFactory">carePlanFactory</a> ⇒ <code>R4.ICarePlan</code></dt>
 <dd><p>Defines a Factory for generating FHIR CarePlans.</p></dd>
 <dt><a href="#careTeamFactory">careTeamFactory</a> ⇒ <code>R4.ICareTeam</code></dt>
@@ -29,8 +35,14 @@
 <dl>
 <dt><a href="#common">common(factory, n, params)</a> ⇒ <code>Array.&lt;T&gt;</code></dt>
 <dd><p>Generic function for building a list of type T from a Factory.</p></dd>
+<dt><a href="#activityDefinitionGenerator">activityDefinitionGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IActivityDefinition&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR ActivityDefinition objects.</p></dd>
 <dt><a href="#addressGenerator">addressGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IAddress&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Address objects.</p></dd>
+<dt><a href="#bundleGenerator">bundleGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IBundle&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Bundle objects.</p></dd>
+<dt><a href="#bundleEntryGenerator">bundleEntryGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IBundle_Entry&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Bundle Entry objects.</p></dd>
 <dt><a href="#carePlanGenerator">carePlanGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICarePlan&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#careTeamGenerator">careTeamGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code></dt>
@@ -57,6 +69,21 @@
 **Returns**: <code>R4.ICodeableConcept</code> - <ul>
 <li>A LOIC code as a CodeableConcept</li>
 </ul>  
+<a name="activityDefinitionFactory"></a>
+
+## activityDefinitionFactory ⇒ <code>R4.IActivityDefinition</code>
+
+<p>Defines a Factory for generating FHIR ActivityDefinitions.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IActivityDefinition</code> - <ul>
+<li>a FHIR ActivityDefinition</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IActivityDefinition, R4.IActivityDefinition&gt;</code> | <p>Options for generating the ActivityDefinition object.</p> |
+
 <a name="addressFactory"></a>
 
 ## addressFactory ⇒ <code>R4.IAddress</code>
@@ -71,6 +98,36 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IAddress, R4.IAddress&gt;</code> | <p>Options for generating the Address object.</p> |
+
+<a name="bundleFactory"></a>
+
+## bundleFactory ⇒ <code>R4.IBundle</code>
+
+<p>Defines a Factory for generating FHIR dBundlees.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IBundle</code> - <ul>
+<li>a FHIR dBundle</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IBundle, R4.IBundle&gt;</code> | <p>Options for generating the dBundle object.</p> |
+
+<a name="bundleEntryFactory"></a>
+
+## bundleEntryFactory ⇒ <code>R4.IBundle\_Entry</code>
+
+<p>Defines a Factory for generating FHIR Bundle Entries.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IBundle\_Entry</code> - <ul>
+<li>a FHIR Bundle Entry</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IBundle\_Entry, R4.IBundle\_Entry&gt;</code> | <p>Options for generating the Bundle Entry object.</p> |
 
 <a name="carePlanFactory"></a>
 
@@ -174,7 +231,23 @@
 | --- | --- | --- |
 | factory | <code>Factory.&lt;T&gt;</code> | <p>The Factory.</p> |
 | n | <code>number</code> | <p>Number of type T to create.</p> |
-| params |  |  |
+| params | <code>DeepPartial.&lt;T&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;T&gt;&gt;</code> | <p>Preset parameters to override randomly generated data. If provided an array, it will ignore the 'n' param and use the length of the array.</p> |
+
+<a name="activityDefinitionGenerator"></a>
+
+## activityDefinitionGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IActivityDefinition&gt;</code>
+
+<p>Creates an Array of size n containing FHIR ActivityDefinition objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IActivityDefinition&gt;</code> - <ul>
+<li>The Array of FHIR ActivityDefinitions.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR ActivityDefinitions to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IActivityDefinition&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IActivityDefinition&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="addressGenerator"></a>
 
@@ -190,7 +263,39 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR Addresses to generate.</p> |
-| defaults | <code>DeepPartial.&lt;R4.IAddress&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IAddress&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IAddress&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="bundleGenerator"></a>
+
+## bundleGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IBundle&gt;</code>
+
+<p>Creates an Array of size n containing FHIR Bundle objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IBundle&gt;</code> - <ul>
+<li>The Array of FHIR Bundles.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Bundles to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IBundle&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IBundle&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="bundleEntryGenerator"></a>
+
+## bundleEntryGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IBundle\_Entry&gt;</code>
+
+<p>Creates an Array of size n containing FHIR Bundle Entry objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IBundle\_Entry&gt;</code> - <ul>
+<li>The Array of FHIR Bundle Entries.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Bundle Entries to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IBundle\_Entry&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IBundle\_Entry&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="carePlanGenerator"></a>
 
@@ -206,7 +311,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR DiagnosticReports to generate.</p> |
-| defaults | <code>DeepPartial.&lt;R4.ICarePlan&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+| defaults | <code>DeepPartial.&lt;R4.ICarePlan&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.ICarePlan&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="careTeamGenerator"></a>
 
@@ -222,7 +327,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR CareTeams to generate.</p> |
-| defaults | <code>DeepPartial.&lt;R4.ICareTeam&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+| defaults | <code>DeepPartial.&lt;R4.ICareTeam&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.ICareTeam&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="diagnosticReportGenerator"></a>
 
@@ -238,7 +343,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR DiagnosticReports to generate.</p> |
-| defaults | <code>DeepPartial.&lt;R4.IDiagnosticReport&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IDiagnosticReport&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IDiagnosticReport&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="observationGenerator"></a>
 
@@ -254,7 +359,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR Observations to generate.</p> |
-| defaults | <code>DeepPartial.&lt;R4.IObservation&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IObservation&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IObservation&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="patientGenerator"></a>
 
@@ -270,7 +375,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR Patients to generate.</p> |
-| defaults | <code>DeepPartial.&lt;R4.IPatient&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IPatient&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IPatient&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="planDefinitionGenerator"></a>
 
@@ -286,7 +391,7 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR PlanDefinitions to generate.</p> |
-| defaults | <code>DeepPartial.&lt;R4.IPlanDefinition&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IPlanDefinition&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IPlanDefinition&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="randomEnum"></a>
 
