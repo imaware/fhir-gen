@@ -77,12 +77,10 @@
   "lint-staged": {
     "src/**.ts": [
       "yarn eslint:fix",
-      "yarn prettier:fix",
-      "git add"
+      "yarn prettier:fix"
     ],
     "**.md": [
-      "yarn mdlint:fix",
-      "git add"
+      "yarn mdlint:fix"
     ]
   }
 }
