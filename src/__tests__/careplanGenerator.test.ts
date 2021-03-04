@@ -13,8 +13,8 @@ describe('CarePlanGenerator', () => {
       status: 'entered-in-error',
     });
     expect(cps.length).to.equal(10);
-    cps.forEach((dr: R4.ICarePlan) => {
-      expect(dr.status).to.equal('entered-in-error');
+    cps.forEach((cp: R4.ICarePlan) => {
+      expect(cp.status).to.equal('entered-in-error');
     });
   });
 });

@@ -12,6 +12,8 @@
 <dd><p>Defines a Factory for generating FHIR Addresses.</p></dd>
 <dt><a href="#carePlanFactory">carePlanFactory</a> ⇒ <code>R4.ICarePlan</code></dt>
 <dd><p>Defines a Factory for generating FHIR CarePlans.</p></dd>
+<dt><a href="#careTeamFactory">careTeamFactory</a> ⇒ <code>R4.ICareTeam</code></dt>
+<dd><p>Defines a Factory for generating FHIR CareTeams.</p></dd>
 <dt><a href="#diagnosticReportFactory">diagnosticReportFactory</a> ⇒ <code>R4.IDiagnosticReport</code></dt>
 <dd><p>Defines a Factory for generating FHIR DiagnosticReports.</p></dd>
 <dt><a href="#observationFactory">observationFactory</a> ⇒ <code>R4.IObservation</code></dt>
@@ -29,6 +31,8 @@
 <dd><p>Creates an Array of size n containing FHIR Address objects.</p></dd>
 <dt><a href="#carePlanGenerator">carePlanGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICarePlan&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
+<dt><a href="#careTeamGenerator">careTeamGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#diagnosticReportGenerator">diagnosticReportGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#observationGenerator">observationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IObservation&gt;</code></dt>
@@ -42,6 +46,7 @@
 <a name="loincCodes"></a>
 
 ## loincCodes ⇒ <code>R4.ICodeableConcept</code>
+
 <p>Returns a random LOIC code FHIR CodeableConcept</p>
 
 **Kind**: global variable  
@@ -51,6 +56,7 @@
 <a name="addressFactory"></a>
 
 ## addressFactory ⇒ <code>R4.IAddress</code>
+
 <p>Defines a Factory for generating FHIR Addresses.</p>
 
 **Kind**: global constant  
@@ -65,6 +71,7 @@
 <a name="carePlanFactory"></a>
 
 ## carePlanFactory ⇒ <code>R4.ICarePlan</code>
+
 <p>Defines a Factory for generating FHIR CarePlans.</p>
 
 **Kind**: global constant  
@@ -76,9 +83,25 @@
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.ICarePlan, R4.ICarePlan&gt;</code> | <p>Options for generating the CarePlan object.</p> |
 
+<a name="careTeamFactory"></a>
+
+## careTeamFactory ⇒ <code>R4.ICareTeam</code>
+
+<p>Defines a Factory for generating FHIR CareTeams.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.ICareTeam</code> - <ul>
+<li>a FHIR CareTeam</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.ICareTeam, R4.ICareTeam&gt;</code> | <p>Options for generating the CareTeam object.</p> |
+
 <a name="diagnosticReportFactory"></a>
 
 ## diagnosticReportFactory ⇒ <code>R4.IDiagnosticReport</code>
+
 <p>Defines a Factory for generating FHIR DiagnosticReports.</p>
 
 **Kind**: global constant  
@@ -93,6 +116,7 @@
 <a name="observationFactory"></a>
 
 ## observationFactory ⇒ <code>R4.IObservation</code>
+
 <p>Defines a Factory for generating FHIR Observations.</p>
 
 **Kind**: global constant  
@@ -107,6 +131,7 @@
 <a name="patientFactory"></a>
 
 ## patientFactory ⇒ <code>R4.IPatient</code>
+
 <p>Defines a Factory for generating FHIR Patients.</p>
 
 **Kind**: global constant  
@@ -121,6 +146,7 @@
 <a name="common"></a>
 
 ## common(factory, n, params) ⇒ <code>Array.&lt;T&gt;</code>
+
 <p>Generic function for building a list of type T from a Factory.</p>
 
 **Kind**: global function  
@@ -134,6 +160,7 @@
 <a name="addressGenerator"></a>
 
 ## addressGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IAddress&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Address objects.</p>
 
 **Kind**: global function  
@@ -149,6 +176,7 @@
 <a name="carePlanGenerator"></a>
 
 ## carePlanGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ICarePlan&gt;</code>
+
 <p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p>
 
 **Kind**: global function  
@@ -161,9 +189,26 @@
 | n | <code>number</code> | <p>The number of FHIR DiagnosticReports to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.ICarePlan&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
+<a name="careTeamGenerator"></a>
+
+## careTeamGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code>
+
+<p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.ICareTeam&gt;</code> - <ul>
+<li>The Array of FHIR DiagnosticReports.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR DiagnosticReports to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.ICareTeam&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
 <a name="diagnosticReportGenerator"></a>
 
 ## diagnosticReportGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code>
+
 <p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p>
 
 **Kind**: global function  
@@ -179,6 +224,7 @@
 <a name="observationGenerator"></a>
 
 ## observationGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IObservation&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Observation objects.</p>
 
 **Kind**: global function  
@@ -194,6 +240,7 @@
 <a name="patientGenerator"></a>
 
 ## patientGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IPatient&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Patient objects.</p>
 
 **Kind**: global function  
@@ -209,6 +256,7 @@
 <a name="randomEnum"></a>
 
 ## randomEnum(anEnum) ⇒ <code>T</code>
+
 <p>Returns a random enum value.</p>
 
 **Kind**: global function  
@@ -219,4 +267,3 @@
 | Param | Description |
 | --- | --- |
 | anEnum | <p>An enum to return a random value from.</p> |
-
