@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {Factory} from 'fishery';
+import {Factory, GeneratorFnOptions} from 'fishery';
 import {common} from '../generator/common';
 
 describe('CommonGenerator', () => {
@@ -11,6 +11,21 @@ describe('CommonGenerator', () => {
     expect(nums.length).to.equal(10);
     nums.forEach((n: number) => {
       expect(n).to.equal(1);
+    });
+  });
+  it('correctly creates a list of 5 numbers with different presets', async () => {
+    const nums = common(
+      Factory.define<number, number>(
+        (opts: GeneratorFnOptions<number, number>): number => opts.sequence,
+      ),
+      10,
+      [1, 2, 3, 4, 5],
+    );
+    expect(nums.length).to.equal(5);
+    let i = 1;
+    nums.forEach((n: number) => {
+      expect(n).to.equal(i);
+      i = i + 1;
     });
   });
 });

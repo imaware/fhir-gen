@@ -1,5 +1,7 @@
 import {R4} from '@ahryman40k/ts-fhir-types';
 import {expect} from 'chai';
+import {random} from 'faker';
+import {DeepPartial} from 'fishery';
 import {observationGenerator} from '../generator/fhir/r4/observation';
 
 describe('ObservationGenerator', () => {
@@ -15,6 +17,29 @@ describe('ObservationGenerator', () => {
     expect(obs.length).to.equal(10);
     obs.forEach((o: R4.IObservation) => {
       expect(o.status).to.equal('final');
+    });
+  });
+
+  it('correctly creates a list of 3 observations with different presets', async () => {
+    const presets = [
+      {
+        status: 'active',
+      },
+      {
+        subject: {
+          reference: `Patient/${random.uuid()}`,
+        },
+      },
+      {
+        specimen: {
+          reference: `Specimen/${random.uuid()}`,
+        },
+      },
+    ] as Array<DeepPartial<R4.IObservation>>;
+    const obs = observationGenerator(presets.length, presets);
+    expect(obs.length).to.equal(presets.length);
+    obs.forEach((ob: R4.IObservation, index: number) => {
+      expect(ob).to.containSubset(presets[index]);
     });
   });
 });

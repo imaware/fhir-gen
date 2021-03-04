@@ -6,13 +6,21 @@ import {DeepPartial, Factory} from 'fishery';
  * @param {Factory<T>} factory - The Factory.
  * @param {number} n - Number of type T to create.
  *
- * @param params
+ * @param {DeepPartial<T> | Array<DeepPartial<T>>} params - Preset parameters to override randomly generated data.
+ * If provided an array, it will ignore the 'n' param and use the length of the array.
  * @returns {Array<T>}
  */
 export const common = <T>(
   factory: Factory<T>,
   n: number,
-  params: DeepPartial<T> = {},
+  params: DeepPartial<T> | Array<DeepPartial<T>> = {},
 ): Array<T> => {
-  return factory.buildList(n, params);
+  if (Array.isArray(params)) {
+    return params.map(
+      (v: DeepPartial<T>): T => {
+        return factory.build(v);
+      },
+    );
+  }
+  return factory.buildList(n, params as DeepPartial<T>);
 };
