@@ -3,7 +3,7 @@ import {expect} from 'chai';
 import {DeepPartial} from 'fishery';
 import {accountGenerator} from '../generator/fhir/r4/account';
 
-describe('PatientGenerator', () => {
+describe('AccountGenerator', () => {
   it('correctly creates a list of 10 accounts', async () => {
     const acts = accountGenerator(10);
     expect(acts.length).to.equal(10);
