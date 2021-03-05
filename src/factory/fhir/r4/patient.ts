@@ -1,7 +1,8 @@
 import {R4} from '@ahryman40k/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {date, internet, name, phone, random} from 'faker';
+import {date, name, random} from 'faker';
 import {addressFactory} from './address';
+import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';
 
 /**
  * Defines a Factory for generating FHIR Patients.
@@ -20,32 +21,15 @@ export const patientFactory = Factory.define<R4.IPatient>(
       given.push(name.middleName());
     }
     // Contact points
-    const contactPoints = [] as R4.IContactPoint[];
-    // // Email
-    contactPoints.push({
-      id: random.uuid(),
-      system: 'email',
-      value: internet.email(),
-      rank: contactPoints.length + 1,
-    } as R4.IContactPoint);
-    // // Phone (SMS)
-    if (random.boolean()) {
-      contactPoints.push({
-        id: random.uuid(),
-        system: 'sms',
-        value: phone.phoneNumber('1##########'),
-        rank: contactPoints.length + 1,
-      } as R4.IContactPoint);
-    }
-    // // Phone
-    if (random.boolean()) {
-      contactPoints.push({
-        id: random.uuid(),
-        system: 'phone',
-        value: phone.phoneNumber('1##########'),
-        rank: contactPoints.length + 1,
-      } as R4.IContactPoint);
-    }
+    const numContactPoints = random.number({min: 1, max: 3});
+    const contactPoints = contactPointGenerator(
+      numContactPoints,
+      Array.from(Array(numContactPoints).keys()).map(
+        (n: number): R4.IContactPoint => {
+          return {rank: n};
+        },
+      ),
+    );
     return {
       resourceType: 'Patient',
       id: random.uuid(),

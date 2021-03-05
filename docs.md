@@ -8,6 +8,8 @@
 ## Constants
 
 <dl>
+<dt><a href="#accountFactory">accountFactory</a> ⇒ <code>R4.IAccount</code></dt>
+<dd><p>Defines a Factory for generating FHIR Accounts.</p></dd>
 <dt><a href="#activityDefinitionFactory">activityDefinitionFactory</a> ⇒ <code>R4.IActivityDefinition</code></dt>
 <dd><p>Defines a Factory for generating FHIR ActivityDefinitions.</p></dd>
 <dt><a href="#addressFactory">addressFactory</a> ⇒ <code>R4.IAddress</code></dt>
@@ -20,10 +22,14 @@
 <dd><p>Defines a Factory for generating FHIR CarePlans.</p></dd>
 <dt><a href="#careTeamFactory">careTeamFactory</a> ⇒ <code>R4.ICareTeam</code></dt>
 <dd><p>Defines a Factory for generating FHIR CareTeams.</p></dd>
+<dt><a href="#contactPointFactory">contactPointFactory</a> ⇒ <code>R4.IContactPoint</code></dt>
+<dd><p>Defines a Factory for generating FHIR ContactPoints.</p></dd>
 <dt><a href="#diagnosticReportFactory">diagnosticReportFactory</a> ⇒ <code>R4.IDiagnosticReport</code></dt>
 <dd><p>Defines a Factory for generating FHIR DiagnosticReports.</p></dd>
 <dt><a href="#observationFactory">observationFactory</a> ⇒ <code>R4.IObservation</code></dt>
 <dd><p>Defines a Factory for generating FHIR Observations.</p></dd>
+<dt><a href="#organizationFactory">organizationFactory</a> ⇒ <code>R4.IOrganization</code></dt>
+<dd><p>Defines a Factory for generating FHIR Organizations.</p></dd>
 <dt><a href="#patientFactory">patientFactory</a> ⇒ <code>R4.IPatient</code></dt>
 <dd><p>Defines a Factory for generating FHIR Patients.</p></dd>
 <dt><a href="#planDefinitionFactory">planDefinitionFactory</a> ⇒ <code>R4.IPlanDefinition</code></dt>
@@ -35,6 +41,8 @@
 <dl>
 <dt><a href="#common">common(factory, n, params)</a> ⇒ <code>Array.&lt;T&gt;</code></dt>
 <dd><p>Generic function for building a list of type T from a Factory.</p></dd>
+<dt><a href="#accountGenerator">accountGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IAccount&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Account objects.</p></dd>
 <dt><a href="#activityDefinitionGenerator">activityDefinitionGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IActivityDefinition&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR ActivityDefinition objects.</p></dd>
 <dt><a href="#addressGenerator">addressGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IAddress&gt;</code></dt>
@@ -47,10 +55,14 @@
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#careTeamGenerator">careTeamGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR CareTeam objects.</p></dd>
+<dt><a href="#contactPointGenerator">contactPointGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IContactPoint&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR ContactPoint objects.</p></dd>
 <dt><a href="#diagnosticReportGenerator">diagnosticReportGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#observationGenerator">observationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IObservation&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Observation objects.</p></dd>
+<dt><a href="#organizationGenerator">organizationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IOrganization&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Organization objects.</p></dd>
 <dt><a href="#patientGenerator">patientGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IPatient&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Patient objects.</p></dd>
 <dt><a href="#planDefinitionGenerator">planDefinitionGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IPlanDefinition&gt;</code></dt>
@@ -69,6 +81,21 @@
 **Returns**: <code>R4.ICodeableConcept</code> - <ul>
 <li>A LOIC code as a CodeableConcept</li>
 </ul>  
+<a name="accountFactory"></a>
+
+## accountFactory ⇒ <code>R4.IAccount</code>
+
+<p>Defines a Factory for generating FHIR Accounts.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IAccount</code> - <ul>
+<li>a FHIR Account</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IAccount, R4.IAccount&gt;</code> | <p>Options for generating the Account object.</p> |
+
 <a name="activityDefinitionFactory"></a>
 
 ## activityDefinitionFactory ⇒ <code>R4.IActivityDefinition</code>
@@ -159,6 +186,21 @@
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.ICareTeam, R4.ICareTeam&gt;</code> | <p>Options for generating the CareTeam object.</p> |
 
+<a name="contactPointFactory"></a>
+
+## contactPointFactory ⇒ <code>R4.IContactPoint</code>
+
+<p>Defines a Factory for generating FHIR ContactPoints.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IContactPoint</code> - <ul>
+<li>a FHIR ContactPoint</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IContactPoint, R4.IContactPoint&gt;</code> | <p>Options for generating the ContactPoint object.</p> |
+
 <a name="diagnosticReportFactory"></a>
 
 ## diagnosticReportFactory ⇒ <code>R4.IDiagnosticReport</code>
@@ -188,6 +230,21 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IObservation, R4.IObservation&gt;</code> | <p>Options for generating the Observation object.</p> |
+
+<a name="organizationFactory"></a>
+
+## organizationFactory ⇒ <code>R4.IOrganization</code>
+
+<p>Defines a Factory for generating FHIR Organizations.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IOrganization</code> - <ul>
+<li>a FHIR Organization</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IOrganization, R4.IOrganization&gt;</code> | <p>Options for generating the Organization object.</p> |
 
 <a name="patientFactory"></a>
 
@@ -232,6 +289,22 @@
 | factory | <code>Factory.&lt;T&gt;</code> | <p>The Factory.</p> |
 | n | <code>number</code> | <p>Number of type T to create.</p> |
 | params | <code>DeepPartial.&lt;T&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;T&gt;&gt;</code> | <p>Preset parameters to override randomly generated data. If provided an array, it will ignore the 'n' param and use the length of the array.</p> |
+
+<a name="accountGenerator"></a>
+
+## accountGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IAccount&gt;</code>
+
+<p>Creates an Array of size n containing FHIR Account objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IAccount&gt;</code> - <ul>
+<li>The Array of FHIR Accounts.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Accounts to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IAccount&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IAccount&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="activityDefinitionGenerator"></a>
 
@@ -329,6 +402,22 @@
 | n | <code>number</code> | <p>The number of FHIR CareTeams to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.ICareTeam&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.ICareTeam&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
+<a name="contactPointGenerator"></a>
+
+## contactPointGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IContactPoint&gt;</code>
+
+<p>Creates an Array of size n containing FHIR ContactPoint objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IContactPoint&gt;</code> - <ul>
+<li>The Array of FHIR ContactPoint.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR ContactPoints to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IContactPoint&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IContactPoint&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
 <a name="diagnosticReportGenerator"></a>
 
 ## diagnosticReportGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code>
@@ -360,6 +449,22 @@
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR Observations to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.IObservation&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IObservation&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="organizationGenerator"></a>
+
+## organizationGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IOrganization&gt;</code>
+
+<p>Creates an Array of size n containing FHIR Organization objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IOrganization&gt;</code> - <ul>
+<li>The Array of FHIR Organizations.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Organizations to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IOrganization&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IOrganization&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="patientGenerator"></a>
 
