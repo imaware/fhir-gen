@@ -26,7 +26,7 @@ export const patientFactory = Factory.define<R4.IPatient>(
       numContactPoints,
       Array.from(Array(numContactPoints).keys()).map(
         (n: number): R4.IContactPoint => {
-          return {rank: n};
+          return {rank: n + 1};
         },
       ),
     );

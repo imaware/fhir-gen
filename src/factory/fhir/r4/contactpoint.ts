@@ -37,7 +37,7 @@ export const contactPointFactory = Factory.define<R4.IContactPoint>(
       id: random.uuid(),
       system,
       value,
-      rank: 0,
+      rank: 1,
       ...params,
     } as R4.IContactPoint;
   },
