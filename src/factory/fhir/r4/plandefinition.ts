@@ -20,7 +20,6 @@ export const planDefinitionFactory = Factory.define<R4.IPlanDefinition>(
       resourceType: 'PlanDefinition',
       id: random.uuid(),
       status: randomEnum(R4.PlanDefinitionStatusKind),
-      intent: 'proposal',
       ...params,
     } as R4.IPlanDefinition;
   },
