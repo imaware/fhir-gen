@@ -22,10 +22,14 @@
 <dd><p>Defines a Factory for generating FHIR CarePlans.</p></dd>
 <dt><a href="#careTeamFactory">careTeamFactory</a> ⇒ <code>R4.ICareTeam</code></dt>
 <dd><p>Defines a Factory for generating FHIR CareTeams.</p></dd>
+<dt><a href="#chargeItemFactory">chargeItemFactory</a> ⇒ <code>R4.IChargeItem</code></dt>
+<dd><p>Defines a Factory for generating FHIR ChargeItems.</p></dd>
 <dt><a href="#contactPointFactory">contactPointFactory</a> ⇒ <code>R4.IContactPoint</code></dt>
 <dd><p>Defines a Factory for generating FHIR ContactPoints.</p></dd>
 <dt><a href="#diagnosticReportFactory">diagnosticReportFactory</a> ⇒ <code>R4.IDiagnosticReport</code></dt>
 <dd><p>Defines a Factory for generating FHIR DiagnosticReports.</p></dd>
+<dt><a href="#invoiceFactory">invoiceFactory</a> ⇒ <code>R4.IInvoice</code></dt>
+<dd><p>Defines a Factory for generating FHIR Invoices.</p></dd>
 <dt><a href="#observationFactory">observationFactory</a> ⇒ <code>R4.IObservation</code></dt>
 <dd><p>Defines a Factory for generating FHIR Observations.</p></dd>
 <dt><a href="#organizationFactory">organizationFactory</a> ⇒ <code>R4.IOrganization</code></dt>
@@ -55,10 +59,14 @@
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#careTeamGenerator">careTeamGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR CareTeam objects.</p></dd>
+<dt><a href="#chargeItemGenerator">chargeItemGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IChargeItem&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR ChargeItem objects.</p></dd>
 <dt><a href="#contactPointGenerator">contactPointGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IContactPoint&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR ContactPoint objects.</p></dd>
 <dt><a href="#diagnosticReportGenerator">diagnosticReportGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
+<dt><a href="#invoiceGenerator">invoiceGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IInvoice&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Invoice objects.</p></dd>
 <dt><a href="#observationGenerator">observationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IObservation&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Observation objects.</p></dd>
 <dt><a href="#organizationGenerator">organizationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IOrganization&gt;</code></dt>
@@ -186,6 +194,21 @@
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.ICareTeam, R4.ICareTeam&gt;</code> | <p>Options for generating the CareTeam object.</p> |
 
+<a name="chargeItemFactory"></a>
+
+## chargeItemFactory ⇒ <code>R4.IChargeItem</code>
+
+<p>Defines a Factory for generating FHIR ChargeItems.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IChargeItem</code> - <ul>
+<li>a FHIR ChargeItem</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IChargeItem, R4.IChargeItem&gt;</code> | <p>Options for generating the ChargeItem object.</p> |
+
 <a name="contactPointFactory"></a>
 
 ## contactPointFactory ⇒ <code>R4.IContactPoint</code>
@@ -215,6 +238,21 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IDiagnosticReport, R4.IDiagnosticReport&gt;</code> | <p>Options for generating the DiagnosticReport object.</p> |
+
+<a name="invoiceFactory"></a>
+
+## invoiceFactory ⇒ <code>R4.IInvoice</code>
+
+<p>Defines a Factory for generating FHIR Invoices.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IInvoice</code> - <ul>
+<li>a FHIR Invoice</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IInvoice, R4.IInvoice&gt;</code> | <p>Options for generating the Invoice object.</p> |
 
 <a name="observationFactory"></a>
 
@@ -402,6 +440,22 @@
 | n | <code>number</code> | <p>The number of FHIR CareTeams to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.ICareTeam&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.ICareTeam&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
+<a name="chargeItemGenerator"></a>
+
+## chargeItemGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IChargeItem&gt;</code>
+
+<p>Creates an Array of size n containing FHIR ChargeItem objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IChargeItem&gt;</code> - <ul>
+<li>The Array of FHIR chargeitems.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR ChargeItems to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IChargeItem&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IChargeItem&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
 <a name="contactPointGenerator"></a>
 
 ## contactPointGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IContactPoint&gt;</code>
@@ -433,6 +487,22 @@
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR DiagnosticReports to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.IDiagnosticReport&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IDiagnosticReport&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="invoiceGenerator"></a>
+
+## invoiceGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IInvoice&gt;</code>
+
+<p>Creates an Array of size n containing FHIR Invoice objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IInvoice&gt;</code> - <ul>
+<li>The Array of FHIR invoices.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Invoices to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IInvoice&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IInvoice&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="observationGenerator"></a>
 
