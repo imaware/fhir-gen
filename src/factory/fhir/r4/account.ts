@@ -16,6 +16,7 @@ export const accountFactory = Factory.define<R4.IAccount>(
     return {
       resourceType: 'Account',
       id: random.uuid(),
+      status: 'active',
       ...params,
     } as R4.IAccount;
   },

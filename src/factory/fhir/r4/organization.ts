@@ -23,7 +23,7 @@ export const organizationFactory = Factory.define<R4.IOrganization>(
       numContactPoints,
       Array.from(Array(numContactPoints).keys()).map(
         (n: number): R4.IContactPoint => {
-          return {rank: n};
+          return {rank: n + 1};
         },
       ),
     );
