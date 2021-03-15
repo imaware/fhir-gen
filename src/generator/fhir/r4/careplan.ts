@@ -4,12 +4,12 @@ import {carePlanFactory} from '../../../factory/fhir/r4/careplan';
 import {common} from '../../common';
 
 /**
- * Creates an Array of size n containing FHIR DiagnosticReport objects.
+ * Creates an Array of size n containing FHIR CarePlan objects.
  *
- * @param {number} n - The number of FHIR DiagnosticReports to generate.
+ * @param {number} n - The number of FHIR CarePlans to generate.
  * @param {DeepPartial<R4.ICarePlan> | Array<DeepPartial<R4.ICarePlan>>} defaults - A subset of default properties for the generated objects.
  *
- * @returns {Array<R4.ICarePlan>} - The Array of FHIR DiagnosticReports.
+ * @returns {Array<R4.ICarePlan>} - The Array of FHIR CarePlans.
  */
 export const carePlanGenerator = (
   n: number,
