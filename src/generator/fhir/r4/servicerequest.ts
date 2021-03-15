@@ -7,9 +7,9 @@ import {common} from '../../common';
  * Creates an Array of size n containing FHIR ServiceRequest objects.
  *
  * @param {number} n - The number of FHIR ServiceRequests to generate.
- * @param {DeepPartial<R4.ServiceRequest> | Array<DeepPartial<R4.ServiceRequest>>} defaults - A subset of default properties for the generated objects.
+ * @param {DeepPartial<R4.IServiceRequest> | Array<DeepPartial<R4.IServiceRequest>>} defaults - A subset of default properties for the generated objects.
  *
- * @returns {Array<R4.ServiceRequest>} - The Array of FHIR ServiceRequests.
+ * @returns {Array<R4.IServiceRequest>} - The Array of FHIR ServiceRequests.
  */
 export const serviceRequestGenerator = (
   n: number,
