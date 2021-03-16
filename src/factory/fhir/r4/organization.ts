@@ -1,4 +1,4 @@
-import {R4} from '@ahryman40k/ts-fhir-types';
+import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
 import {company, random} from 'faker';
 import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';

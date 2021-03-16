@@ -1,4 +1,4 @@
-import {R4} from '@ahryman40k/ts-fhir-types';
+import {R4} from '@imaware/ts-fhir-types';
 import {random} from 'faker';
 import {DeepPartial} from 'fishery';
 import {

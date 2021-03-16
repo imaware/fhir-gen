@@ -1,4 +1,4 @@
-import {R4} from '@ahryman40k/ts-fhir-types';
+import {R4} from '@imaware/ts-fhir-types';
 import {expect} from 'chai';
 import {biomarkerValueMap, loincCodes, LOINC_CODE_TYPE} from '../util';
 import {observationFactory} from '../factory/fhir/r4/observation';

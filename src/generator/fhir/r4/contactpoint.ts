@@ -1,4 +1,4 @@
-import {R4} from '@ahryman40k/ts-fhir-types';
+import {R4} from '@imaware/ts-fhir-types';
 import {DeepPartial} from 'fishery';
 import {contactPointFactory} from '../../../factory/fhir/r4/contactpoint';
 import {common} from '../../common';

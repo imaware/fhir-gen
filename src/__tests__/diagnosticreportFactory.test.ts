@@ -1,4 +1,4 @@
-import {R4} from '@ahryman40k/ts-fhir-types';
+import {R4} from '@imaware/ts-fhir-types';
 import {expect} from 'chai';
 import {diagnosticReportFactory} from '../factory/fhir/r4/diagnosticreport';
 import {uuidV4Regex} from './helpers/patterns';
