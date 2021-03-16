@@ -86,6 +86,7 @@
 <a name="loincCodes"></a>
 
 ## loincCodes ⇒ <code>R4.ICodeableConcept</code>
+
 <p>Returns a random LOIC code FHIR CodeableConcept</p>
 
 **Kind**: global variable  
@@ -95,6 +96,7 @@
 <a name="accountFactory"></a>
 
 ## accountFactory ⇒ <code>R4.IAccount</code>
+
 <p>Defines a Factory for generating FHIR Accounts.</p>
 
 **Kind**: global constant  
@@ -109,6 +111,7 @@
 <a name="activityDefinitionFactory"></a>
 
 ## activityDefinitionFactory ⇒ <code>R4.IActivityDefinition</code>
+
 <p>Defines a Factory for generating FHIR ActivityDefinitions.</p>
 
 **Kind**: global constant  
@@ -123,6 +126,7 @@
 <a name="addressFactory"></a>
 
 ## addressFactory ⇒ <code>R4.IAddress</code>
+
 <p>Defines a Factory for generating FHIR Addresses.</p>
 
 **Kind**: global constant  
@@ -137,6 +141,7 @@
 <a name="bundleFactory"></a>
 
 ## bundleFactory ⇒ <code>R4.IBundle</code>
+
 <p>Defines a Factory for generating FHIR dBundlees.</p>
 
 **Kind**: global constant  
@@ -151,6 +156,7 @@
 <a name="bundleEntryFactory"></a>
 
 ## bundleEntryFactory ⇒ <code>R4.IBundle\_Entry</code>
+
 <p>Defines a Factory for generating FHIR Bundle Entries.</p>
 
 **Kind**: global constant  
@@ -165,6 +171,7 @@
 <a name="carePlanFactory"></a>
 
 ## carePlanFactory ⇒ <code>R4.ICarePlan</code>
+
 <p>Defines a Factory for generating FHIR CarePlans.</p>
 
 **Kind**: global constant  
@@ -179,6 +186,7 @@
 <a name="careTeamFactory"></a>
 
 ## careTeamFactory ⇒ <code>R4.ICareTeam</code>
+
 <p>Defines a Factory for generating FHIR CareTeams.</p>
 
 **Kind**: global constant  
@@ -193,6 +201,7 @@
 <a name="chargeItemFactory"></a>
 
 ## chargeItemFactory ⇒ <code>R4.IChargeItem</code>
+
 <p>Defines a Factory for generating FHIR ChargeItems.</p>
 
 **Kind**: global constant  
@@ -207,6 +216,7 @@
 <a name="contactPointFactory"></a>
 
 ## contactPointFactory ⇒ <code>R4.IContactPoint</code>
+
 <p>Defines a Factory for generating FHIR ContactPoints.</p>
 
 **Kind**: global constant  
@@ -221,6 +231,7 @@
 <a name="diagnosticReportFactory"></a>
 
 ## diagnosticReportFactory ⇒ <code>R4.IDiagnosticReport</code>
+
 <p>Defines a Factory for generating FHIR DiagnosticReports.</p>
 
 **Kind**: global constant  
@@ -235,6 +246,7 @@
 <a name="invoiceFactory"></a>
 
 ## invoiceFactory ⇒ <code>R4.IInvoice</code>
+
 <p>Defines a Factory for generating FHIR Invoices.</p>
 
 **Kind**: global constant  
@@ -249,6 +261,7 @@
 <a name="observationFactory"></a>
 
 ## observationFactory ⇒ <code>R4.IObservation</code>
+
 <p>Defines a Factory for generating FHIR Observations.</p>
 
 **Kind**: global constant  
@@ -263,6 +276,7 @@
 <a name="organizationFactory"></a>
 
 ## organizationFactory ⇒ <code>R4.IOrganization</code>
+
 <p>Defines a Factory for generating FHIR Organizations.</p>
 
 **Kind**: global constant  
@@ -277,6 +291,7 @@
 <a name="patientFactory"></a>
 
 ## patientFactory ⇒ <code>R4.IPatient</code>
+
 <p>Defines a Factory for generating FHIR Patients.</p>
 
 **Kind**: global constant  
@@ -291,6 +306,7 @@
 <a name="planDefinitionFactory"></a>
 
 ## planDefinitionFactory ⇒ <code>R4.IPlanDefinition</code>
+
 <p>Defines a Factory for generating FHIR PlanDefinitions.</p>
 
 **Kind**: global constant  
@@ -305,6 +321,7 @@
 <a name="serviceRequestFactory"></a>
 
 ## serviceRequestFactory ⇒ <code>R4.IServiceRequest</code>
+
 <p>Defines a Factory for generating FHIR ServiceRequests.</p>
 
 **Kind**: global constant  
@@ -319,6 +336,7 @@
 <a name="common"></a>
 
 ## common(factory, n, params) ⇒ <code>Array.&lt;T&gt;</code>
+
 <p>Generic function for building a list of type T from a Factory.</p>
 
 **Kind**: global function  
@@ -332,6 +350,7 @@
 <a name="accountGenerator"></a>
 
 ## accountGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IAccount&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Account objects.</p>
 
 **Kind**: global function  
@@ -347,6 +366,7 @@
 <a name="activityDefinitionGenerator"></a>
 
 ## activityDefinitionGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IActivityDefinition&gt;</code>
+
 <p>Creates an Array of size n containing FHIR ActivityDefinition objects.</p>
 
 **Kind**: global function  
@@ -362,6 +382,7 @@
 <a name="addressGenerator"></a>
 
 ## addressGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IAddress&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Address objects.</p>
 
 **Kind**: global function  
@@ -377,6 +398,7 @@
 <a name="bundleGenerator"></a>
 
 ## bundleGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IBundle&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Bundle objects.</p>
 
 **Kind**: global function  
@@ -392,6 +414,7 @@
 <a name="bundleEntryGenerator"></a>
 
 ## bundleEntryGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IBundle\_Entry&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Bundle Entry objects.</p>
 
 **Kind**: global function  
@@ -407,6 +430,7 @@
 <a name="carePlanGenerator"></a>
 
 ## carePlanGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ICarePlan&gt;</code>
+
 <p>Creates an Array of size n containing FHIR CarePlan objects.</p>
 
 **Kind**: global function  
@@ -422,6 +446,7 @@
 <a name="careTeamGenerator"></a>
 
 ## careTeamGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ICareTeam&gt;</code>
+
 <p>Creates an Array of size n containing FHIR CareTeam objects.</p>
 
 **Kind**: global function  
@@ -437,6 +462,7 @@
 <a name="chargeItemGenerator"></a>
 
 ## chargeItemGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IChargeItem&gt;</code>
+
 <p>Creates an Array of size n containing FHIR ChargeItem objects.</p>
 
 **Kind**: global function  
@@ -452,6 +478,7 @@
 <a name="contactPointGenerator"></a>
 
 ## contactPointGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IContactPoint&gt;</code>
+
 <p>Creates an Array of size n containing FHIR ContactPoint objects.</p>
 
 **Kind**: global function  
@@ -467,6 +494,7 @@
 <a name="diagnosticReportGenerator"></a>
 
 ## diagnosticReportGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IDiagnosticReport&gt;</code>
+
 <p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p>
 
 **Kind**: global function  
@@ -482,6 +510,7 @@
 <a name="invoiceGenerator"></a>
 
 ## invoiceGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IInvoice&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Invoice objects.</p>
 
 **Kind**: global function  
@@ -497,6 +526,7 @@
 <a name="observationGenerator"></a>
 
 ## observationGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IObservation&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Observation objects.</p>
 
 **Kind**: global function  
@@ -512,6 +542,7 @@
 <a name="organizationGenerator"></a>
 
 ## organizationGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IOrganization&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Organization objects.</p>
 
 **Kind**: global function  
@@ -527,6 +558,7 @@
 <a name="patientGenerator"></a>
 
 ## patientGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IPatient&gt;</code>
+
 <p>Creates an Array of size n containing FHIR Patient objects.</p>
 
 **Kind**: global function  
@@ -542,6 +574,7 @@
 <a name="planDefinitionGenerator"></a>
 
 ## planDefinitionGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IPlanDefinition&gt;</code>
+
 <p>Creates an Array of size n containing FHIR PlanDefinition objects.</p>
 
 **Kind**: global function  
@@ -557,6 +590,7 @@
 <a name="serviceRequestGenerator"></a>
 
 ## serviceRequestGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ServiceRequest&gt;</code>
+
 <p>Creates an Array of size n containing FHIR ServiceRequest objects.</p>
 
 **Kind**: global function  
@@ -572,6 +606,7 @@
 <a name="randomEnum"></a>
 
 ## randomEnum(anEnum) ⇒ <code>T</code>
+
 <p>Returns a random enum value.</p>
 
 **Kind**: global function  
@@ -582,4 +617,3 @@
 | Param | Description |
 | --- | --- |
 | anEnum | <p>An enum to return a random value from.</p> |
-

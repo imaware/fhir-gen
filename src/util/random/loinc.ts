@@ -1,4 +1,4 @@
-import {R4} from '@ahryman40k/ts-fhir-types';
+import {R4} from '@imaware/ts-fhir-types';
 import {random} from 'faker';
 
 export const A1C_LOINC_CODE = '4548-4';

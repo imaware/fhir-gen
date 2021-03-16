@@ -23,3 +23,7 @@ Randomly generated resources will not pass back any References in any properties
 ## API Documentation
 
 Auto-generated docs can found in `./docs.md`.
+
+## Contributing
+
+Read the guide for contributing in CONTRIBUTING.md.
