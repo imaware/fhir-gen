@@ -73,9 +73,6 @@
   "files": [
     "dist/**"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@imaware"
-  },
   "lint-staged": {
     "src/**.ts": [
       "yarn eslint:fix",
