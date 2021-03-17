@@ -33,13 +33,15 @@
 <dt><a href="#observationFactory">observationFactory</a> ⇒ <code>R4.IObservation</code></dt>
 <dd><p>Defines a Factory for generating FHIR Observations.</p></dd>
 <dt><a href="#observationDefinitionFactory">observationDefinitionFactory</a> ⇒ <code>R4.IObservationDefinition</code></dt>
-<dd><p>Defines a Factory for generating FHIR ObservatinoDefinition.</p></dd>
+<dd><p>Defines a Factory for generating FHIR ObservationDefinitions.</p></dd>
 <dt><a href="#organizationFactory">organizationFactory</a> ⇒ <code>R4.IOrganization</code></dt>
 <dd><p>Defines a Factory for generating FHIR Organizations.</p></dd>
 <dt><a href="#patientFactory">patientFactory</a> ⇒ <code>R4.IPatient</code></dt>
 <dd><p>Defines a Factory for generating FHIR Patients.</p></dd>
 <dt><a href="#planDefinitionFactory">planDefinitionFactory</a> ⇒ <code>R4.IPlanDefinition</code></dt>
 <dd><p>Defines a Factory for generating FHIR PlanDefinitions.</p></dd>
+<dt><a href="#practitionerFactory">practitionerFactory</a> ⇒ <code>R4.IPractitioner</code></dt>
+<dd><p>Defines a Factory for generating FHIR Practitioners.</p></dd>
 <dt><a href="#serviceRequestFactory">serviceRequestFactory</a> ⇒ <code>R4.IServiceRequest</code></dt>
 <dd><p>Defines a Factory for generating FHIR ServiceRequests.</p></dd>
 </dl>
@@ -81,6 +83,8 @@
 <dd><p>Creates an Array of size n containing FHIR Patient objects.</p></dd>
 <dt><a href="#planDefinitionGenerator">planDefinitionGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IPlanDefinition&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR PlanDefinition objects.</p></dd>
+<dt><a href="#practitionerGenerator">practitionerGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IPractitioner&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Practitioner objects.</p></dd>
 <dt><a href="#serviceRequestGenerator">serviceRequestGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IServiceRequest&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR ServiceRequest objects.</p></dd>
 <dt><a href="#randomEnum">randomEnum(anEnum)</a> ⇒ <code>T</code></dt>
@@ -267,7 +271,7 @@
 <a name="observationDefinitionFactory"></a>
 
 ## observationDefinitionFactory ⇒ <code>R4.IObservationDefinition</code>
-<p>Defines a Factory for generating FHIR ObservatinoDefinition.</p>
+<p>Defines a Factory for generating FHIR ObservationDefinitions.</p>
 
 **Kind**: global constant  
 **Returns**: <code>R4.IObservationDefinition</code> - <ul>
@@ -319,6 +323,20 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IPlanDefinition, R4.IPlanDefinition&gt;</code> | <p>Options for generating the PlanDefinition object.</p> |
+
+<a name="practitionerFactory"></a>
+
+## practitionerFactory ⇒ <code>R4.IPractitioner</code>
+<p>Defines a Factory for generating FHIR Practitioners.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.IPractitioner</code> - <ul>
+<li>a FHIR Practitioner</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.IPractitioner, R4.IPractitioner&gt;</code> | <p>Options for generating the Practitioner object.</p> |
 
 <a name="serviceRequestFactory"></a>
 
@@ -586,6 +604,21 @@
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR PlanDefinitions to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.IPlanDefinition&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IPlanDefinition&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="practitionerGenerator"></a>
+
+## practitionerGenerator(n, defaults) ⇒ <code>Array.&lt;R4.IPractitioner&gt;</code>
+<p>Creates an Array of size n containing FHIR Practitioner objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.IPractitioner&gt;</code> - <ul>
+<li>The Array of FHIR Practitioners.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Practitioners to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.IPractitioner&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IPractitioner&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="serviceRequestGenerator"></a>
 

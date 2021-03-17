@@ -3,7 +3,7 @@ import {Factory, GeneratorFnOptions} from 'fishery';
 import {random} from 'faker';
 
 /**
- * Defines a Factory for generating FHIR ObservatinoDefinition.
+ * Defines a Factory for generating FHIR ObservationDefinitions.
  *
  * @param {GeneratorFnOptions<R4.IObservationDefinition, R4.IObservationDefinition>} opts Options for generating the ObservationDefinition object.
  *
@@ -26,7 +26,7 @@ export const observationDefinitionFactory = Factory.define<R4.IObservationDefini
           {
             code: random.uuid(),
             display: 'Coding code display',
-            system: 'http://loinc.org',
+            system: 'https://imaware.health/system',
           },
         ],
         text: 'Coding code text',
