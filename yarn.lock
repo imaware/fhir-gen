@@ -914,10 +914,10 @@
     update-notifier "^2.2.0"
     yargs "^8.0.2"
 
-"@imaware/ts-fhir-types@^1.0.1":
-  version "1.0.2"
-  resolved "https://npm.pkg.github.com/download/@imaware/ts-fhir-types/1.0.2/b2419a01f5a8b045cbbb3092f96fba1b5bf310d79ea3696d224b2d83485b5bd6#440c76dabe8654182b0268cc794f4dfe70a5383f"
-  integrity sha512-gO+0deCNtCpRRMVMUDep8dXbW5qzrrVYO+Vuh/OXoxOap/SgoLyWbhWGnnsarTyFwLT62tp1c+XR1On2RNWiUA==
+"@imaware/ts-fhir-types@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.3.tgz#d03eba8eeb7c508d7870190fafdc94ee43efe954"
+  integrity sha512-OPpDWX1QT0NaZSZu8J8Zg7C551LKeDh8O1FGKqLZQUQhhMn/GN3WGF9iW3AVG2p5qntCq9HzleSAzQb67N/i/Q==
   dependencies:
     fp-ts "^2.8.3"
     io-ts "^2.0.0"
