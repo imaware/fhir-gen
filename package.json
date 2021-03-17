@@ -34,7 +34,7 @@
     "test:doc": "/bin/bash -c 'diff <(jsdoc2md --files \"./src/**/*.ts\" --configure ./jsdoc2md.json) docs.md'"
   },
   "dependencies": {
-    "@imaware/ts-fhir-types": "^1.0.1",
+    "@imaware/ts-fhir-types": "^1.0.3",
     "faker": "^5.3.1",
     "fishery": "^1.2.0"
   },
