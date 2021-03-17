@@ -14,3 +14,4 @@ export * from './organization';
 export * from './patient';
 export * from './plandefinition';
 export * from './servicerequest';
+export * from './observationdefinition';
