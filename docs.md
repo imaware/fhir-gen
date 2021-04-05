@@ -44,6 +44,10 @@
 <dd><p>Defines a Factory for generating FHIR Practitioners.</p></dd>
 <dt><a href="#serviceRequestFactory">serviceRequestFactory</a> ⇒ <code>R4.IServiceRequest</code></dt>
 <dd><p>Defines a Factory for generating FHIR ServiceRequests.</p></dd>
+<dt><a href="#specimenFactory">specimenFactory</a> ⇒ <code>R4.ISpecimen</code></dt>
+<dd><p>Defines a Factory for generating FHIR Specimen.</p></dd>
+<dt><a href="#specimenDefinitionFactory">specimenDefinitionFactory</a> ⇒ <code>R4.ISpecimenDefinition</code></dt>
+<dd><p>Defines a Factory for generating FHIR SpecimenDefinition.</p></dd>
 </dl>
 
 ## Functions
@@ -87,6 +91,10 @@
 <dd><p>Creates an Array of size n containing FHIR Practitioner objects.</p></dd>
 <dt><a href="#serviceRequestGenerator">serviceRequestGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IServiceRequest&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR ServiceRequest objects.</p></dd>
+<dt><a href="#specimenGenerator">specimenGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ISpecimen&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Specimen objects.</p></dd>
+<dt><a href="#specimenDefinitionGenerator">specimenDefinitionGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ISpecimenDefinition&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR SpecimenDefinition objects.</p></dd>
 <dt><a href="#randomEnum">randomEnum(anEnum)</a> ⇒ <code>T</code></dt>
 <dd><p>Returns a random enum value.</p></dd>
 </dl>
@@ -351,6 +359,34 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IServiceRequest, R4.IServiceRequest&gt;</code> | <p>Options for generating the ServiceRequest object.</p> |
+
+<a name="specimenFactory"></a>
+
+## specimenFactory ⇒ <code>R4.ISpecimen</code>
+<p>Defines a Factory for generating FHIR Specimen.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.ISpecimen</code> - <ul>
+<li>a FHIR Specimen</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.ISpecimen, R4.ISpecimen&gt;</code> | <p>Options for generating the Specimen object.</p> |
+
+<a name="specimenDefinitionFactory"></a>
+
+## specimenDefinitionFactory ⇒ <code>R4.ISpecimenDefinition</code>
+<p>Defines a Factory for generating FHIR SpecimenDefinition.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.ISpecimenDefinition</code> - <ul>
+<li>a FHIR SpecimenDefinition</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.ISpecimenDefinition, R4.ISpecimenDefinition&gt;</code> | <p>Options for generating the SpecimenDefinition object.</p> |
 
 <a name="common"></a>
 
@@ -634,6 +670,36 @@
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR ServiceRequests to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.IServiceRequest&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IServiceRequest&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="specimenGenerator"></a>
+
+## specimenGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ISpecimen&gt;</code>
+<p>Creates an Array of size n containing FHIR Specimen objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.ISpecimen&gt;</code> - <ul>
+<li>The Array of FHIR Specimen.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Specimen to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.ISpecimen&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.ISpecimen&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="specimenDefinitionGenerator"></a>
+
+## specimenDefinitionGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ISpecimenDefinition&gt;</code>
+<p>Creates an Array of size n containing FHIR SpecimenDefinition objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.ISpecimenDefinition&gt;</code> - <ul>
+<li>The Array of FHIR SpecimenDefinition.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR SpecimenDefinition to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.ISpecimenDefinition&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.ISpecimenDefinition&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="randomEnum"></a>
 
