@@ -16,3 +16,5 @@ export * from './patient';
 export * from './plandefinition';
 export * from './practitioner';
 export * from './servicerequest';
+export * from './specimen';
+export * from './specimendefinition';
