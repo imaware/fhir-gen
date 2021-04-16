@@ -74,7 +74,7 @@ export const biomarkerValueMap = new Map<
               value: 20,
             },
             high: {
-              value: 80
+              value: 80,
             },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
