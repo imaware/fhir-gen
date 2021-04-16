@@ -44,8 +44,12 @@ export const biomarkerValueMap = new Map<
         referenceRange: [
           {
             id: random.uuid(),
-            low: 5,
-            high: 20,
+            low: {
+              value: 5,
+            },
+            high: {
+              value: 20,
+            },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
         ] as R4.IObservation_ReferenceRange[],
@@ -66,8 +70,12 @@ export const biomarkerValueMap = new Map<
         referenceRange: [
           {
             id: random.uuid(),
-            low: 20,
-            high: 80,
+            low: {
+              value: 20,
+            },
+            high: {
+              value: 80
+            },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
         ] as R4.IObservation_ReferenceRange[],
@@ -88,8 +96,12 @@ export const biomarkerValueMap = new Map<
         referenceRange: [
           {
             id: random.uuid(),
-            low: 4,
-            high: 15,
+            low: {
+              value: 4,
+            },
+            high: {
+              value: 15,
+            },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
         ] as R4.IObservation_ReferenceRange[],
@@ -110,8 +122,12 @@ export const biomarkerValueMap = new Map<
         referenceRange: [
           {
             id: random.uuid(),
-            low: 0,
-            high: 150,
+            low: {
+              value: 0,
+            },
+            high: {
+              value: 150,
+            },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
         ] as R4.IObservation_ReferenceRange[],
@@ -132,8 +148,12 @@ export const biomarkerValueMap = new Map<
         referenceRange: [
           {
             id: random.uuid(),
-            low: 25,
-            high: 100,
+            low: {
+              value: 25,
+            },
+            high: {
+              value: 100,
+            },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
         ] as R4.IObservation_ReferenceRange[],
@@ -154,8 +174,12 @@ export const biomarkerValueMap = new Map<
         referenceRange: [
           {
             id: random.uuid(),
-            low: 180,
-            high: 194,
+            low: {
+              value: 180,
+            },
+            high: {
+              value: 194,
+            },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
         ] as R4.IObservation_ReferenceRange[],
@@ -176,8 +200,12 @@ export const biomarkerValueMap = new Map<
         referenceRange: [
           {
             id: random.uuid(),
-            low: 3.8,
-            high: 6.4,
+            low: {
+              value: 3.8,
+            },
+            high: {
+              value: 6.4,
+            },
             appliesTo: [codingNormalRange] as R4.ICodeableConcept[],
           },
         ] as R4.IObservation_ReferenceRange[],
