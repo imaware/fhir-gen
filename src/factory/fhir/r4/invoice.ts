@@ -2,7 +2,7 @@ import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
 import {random} from 'faker';
 import {randomEnum} from '../../../util';
-import {chargeItemGenerator} from 'src/generator/fhir/r4/chargeitem';
+// import {chargeItemGenerator} from 'src/generator/fhir/r4/chargeitem';
 
 /**
  * Defines a Factory for generating FHIR Invoices.
