@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {expect} from 'chai';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {DeepPartial} from 'fishery';
 import {diagnosticReportGenerator} from '../generator/fhir/r4/diagnosticreport';
 
@@ -26,10 +26,10 @@ describe('DiagnosticReportGenerator', () => {
         status: 'cancelled',
       },
       {
-        performer: `Practitioner/${random.uuid()}`,
+        performer: `Practitioner/${datatype.uuid()}`,
       },
       {
-        performer: `Subject/${random.uuid()}`,
+        performer: `Subject/${datatype.uuid()}`,
       },
     ] as Array<DeepPartial<R4.IDiagnosticReport>>;
     const cts = diagnosticReportGenerator(presets.length, presets);

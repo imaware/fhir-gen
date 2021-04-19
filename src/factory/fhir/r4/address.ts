@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {address as fakerAddress, random} from 'faker';
+import {address as fakerAddress, datatype} from 'faker';
 
 /**
  * Defines a Factory for generating FHIR Addresses.
@@ -18,11 +18,11 @@ export const addressFactory = Factory.define<R4.IAddress, R4.IAddress>(
     // First Line
     addressLines.push(fakerAddress.streetAddress());
     // Second Line
-    if (random.boolean()) {
+    if (datatype.boolean()) {
       addressLines.push(fakerAddress.secondaryAddress());
     }
     return {
-      id: random.uuid(),
+      id: datatype.uuid(),
       type: 'both',
       line: addressLines,
       city: fakerAddress.city(),

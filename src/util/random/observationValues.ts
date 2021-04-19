@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {DeepPartial} from 'fishery';
 import {
   A1C_LOINC_CODE,
@@ -43,7 +43,7 @@ export const biomarkerValueMap = new Map<
         // HDL
         referenceRange: [
           {
-            id: random.uuid(),
+            id: datatype.uuid(),
             low: {
               value: 5,
             },
@@ -54,8 +54,8 @@ export const biomarkerValueMap = new Map<
           },
         ] as R4.IObservation_ReferenceRange[],
         valueQuantity: {
-          id: random.uuid(),
-          value: random.float({max: 30, min: 2, precision: 1}),
+          id: datatype.uuid(),
+          value: datatype.float({max: 30, min: 2, precision: 1}),
           unit: unitMgDl,
           system: uomSystem,
         } as R4.IQuantity,
@@ -69,7 +69,7 @@ export const biomarkerValueMap = new Map<
         // LDL
         referenceRange: [
           {
-            id: random.uuid(),
+            id: datatype.uuid(),
             low: {
               value: 20,
             },
@@ -80,8 +80,8 @@ export const biomarkerValueMap = new Map<
           },
         ] as R4.IObservation_ReferenceRange[],
         valueQuantity: {
-          id: random.uuid(),
-          value: random.float({max: 100, min: 10, precision: 1}),
+          id: datatype.uuid(),
+          value: datatype.float({max: 100, min: 10, precision: 1}),
           unit: unitMgDl,
           system: uomSystem,
         } as R4.IQuantity,
@@ -95,7 +95,7 @@ export const biomarkerValueMap = new Map<
         // Cholesterol
         referenceRange: [
           {
-            id: random.uuid(),
+            id: datatype.uuid(),
             low: {
               value: 4,
             },
@@ -106,8 +106,8 @@ export const biomarkerValueMap = new Map<
           },
         ] as R4.IObservation_ReferenceRange[],
         valueQuantity: {
-          id: random.uuid(),
-          value: random.float({max: 20, min: 1, precision: 1}),
+          id: datatype.uuid(),
+          value: datatype.float({max: 20, min: 1, precision: 1}),
           unit: unitMgDl,
           system: uomSystem,
         } as R4.IQuantity,
@@ -121,7 +121,7 @@ export const biomarkerValueMap = new Map<
         // Triglycerides
         referenceRange: [
           {
-            id: random.uuid(),
+            id: datatype.uuid(),
             low: {
               value: 0,
             },
@@ -132,8 +132,8 @@ export const biomarkerValueMap = new Map<
           },
         ] as R4.IObservation_ReferenceRange[],
         valueQuantity: {
-          id: random.uuid(),
-          value: random.float({max: 200, min: 0, precision: 1}),
+          id: datatype.uuid(),
+          value: datatype.float({max: 200, min: 0, precision: 1}),
           unit: unitMgDl,
           system: uomSystem,
         } as R4.IQuantity,
@@ -147,7 +147,7 @@ export const biomarkerValueMap = new Map<
         // Triglycerides
         referenceRange: [
           {
-            id: random.uuid(),
+            id: datatype.uuid(),
             low: {
               value: 25,
             },
@@ -158,8 +158,8 @@ export const biomarkerValueMap = new Map<
           },
         ] as R4.IObservation_ReferenceRange[],
         valueQuantity: {
-          id: random.uuid(),
-          value: random.float({max: 125, min: 10, precision: 1}),
+          id: datatype.uuid(),
+          value: datatype.float({max: 125, min: 10, precision: 1}),
           unit: unitNgMl,
           system: uomSystem,
         } as R4.IQuantity,
@@ -173,7 +173,7 @@ export const biomarkerValueMap = new Map<
         // Triglycerides
         referenceRange: [
           {
-            id: random.uuid(),
+            id: datatype.uuid(),
             low: {
               value: 180,
             },
@@ -184,8 +184,8 @@ export const biomarkerValueMap = new Map<
           },
         ] as R4.IObservation_ReferenceRange[],
         valueQuantity: {
-          id: random.uuid(),
-          value: random.float({max: 400, min: 100, precision: 1}),
+          id: datatype.uuid(),
+          value: datatype.float({max: 400, min: 100, precision: 1}),
           unit: unitPgMl,
           system: uomSystem,
         } as R4.IQuantity,
@@ -199,7 +199,7 @@ export const biomarkerValueMap = new Map<
         // Triglycerides
         referenceRange: [
           {
-            id: random.uuid(),
+            id: datatype.uuid(),
             low: {
               value: 3.8,
             },
@@ -210,8 +210,8 @@ export const biomarkerValueMap = new Map<
           },
         ] as R4.IObservation_ReferenceRange[],
         valueQuantity: {
-          id: random.uuid(),
-          value: random.float({max: 8, min: 2, precision: 1}),
+          id: datatype.uuid(),
+          value: datatype.float({max: 8, min: 2, precision: 1}),
           unit: unitPct,
           system: uomSystem,
         } as R4.IQuantity,

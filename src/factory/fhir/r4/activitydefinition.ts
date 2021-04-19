@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
 /**
@@ -18,7 +18,7 @@ export const activityDefinitionFactory = Factory.define<R4.IActivityDefinition>(
     const {params} = opts;
     return {
       resourceType: 'ActivityDefinition',
-      id: random.uuid(),
+      id: datatype.uuid(),
       status: randomEnum(R4.ActivityDefinitionStatusKind),
       ...params,
     } as R4.IActivityDefinition;

@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
 /**
@@ -17,7 +17,7 @@ export const chargeItemFactory = Factory.define<R4.IChargeItem, R4.IChargeItem>(
     // Default values, if any
     const {params} = opts;
     return {
-      id: random.uuid(),
+      id: datatype.uuid(),
       resourceType: 'ChargeItem',
       status: randomEnum(R4.ChargeItemStatusKind),
       ...params,

@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype, random} from 'faker';
 
 const careplanStatuses = [
   'draft',
@@ -25,7 +25,7 @@ export const carePlanFactory = Factory.define<R4.ICarePlan>(
     const {params} = opts;
     return {
       resourceType: 'CarePlan',
-      id: random.uuid(),
+      id: datatype.uuid(),
       status: random.arrayElement(careplanStatuses),
       intent: 'proposal',
       ...params,

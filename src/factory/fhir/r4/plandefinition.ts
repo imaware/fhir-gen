@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
 /**
@@ -18,7 +18,7 @@ export const planDefinitionFactory = Factory.define<R4.IPlanDefinition>(
     const {params} = opts;
     return {
       resourceType: 'PlanDefinition',
-      id: random.uuid(),
+      id: datatype.uuid(),
       status: randomEnum(R4.PlanDefinitionStatusKind),
       ...params,
     } as R4.IPlanDefinition;

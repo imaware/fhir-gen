@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {internet, phone, random} from 'faker';
+import {internet, phone, datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
 /**
@@ -34,7 +34,7 @@ export const contactPointFactory = Factory.define<R4.IContactPoint>(
         break;
     }
     return {
-      id: random.uuid(),
+      id: datatype.uuid(),
       system,
       value,
       rank: 1,

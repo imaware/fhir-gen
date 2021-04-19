@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {date, name, random} from 'faker';
+import {date, name, datatype} from 'faker';
 import {addressFactory} from './address';
 import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';
 
@@ -17,11 +17,11 @@ export const patientFactory = Factory.define<R4.IPatient>(
     const {params} = opts;
     // Given name
     const given = [name.firstName()] as string[];
-    if (random.boolean()) {
+    if (datatype.boolean()) {
       given.push(name.middleName());
     }
     // Contact points
-    const numContactPoints = random.number({min: 1, max: 3});
+    const numContactPoints = datatype.number({min: 1, max: 3});
     const contactPoints = contactPointGenerator(
       numContactPoints,
       Array.from(Array(numContactPoints).keys()).map(
@@ -32,16 +32,16 @@ export const patientFactory = Factory.define<R4.IPatient>(
     );
     return {
       resourceType: 'Patient',
-      id: random.uuid(),
+      id: datatype.uuid(),
       name: [
         {
-          id: random.uuid(),
+          id: datatype.uuid(),
           family: name.lastName(),
           given,
         },
       ] as R4.IHumanName[],
       telecom: contactPoints,
-      gender: random.boolean() ? 'male' : 'female',
+      gender: datatype.boolean() ? 'male' : 'female',
       birthDate: date.past(100, new Date()).toISOString().split('T')[0],
       address: [addressFactory.build()] as R4.IAddress[],
       ...params,
