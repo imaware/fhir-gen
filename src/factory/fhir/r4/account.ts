@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 
 /**
  * Defines a Factory for generating FHIR Accounts.
@@ -15,7 +15,7 @@ export const accountFactory = Factory.define<R4.IAccount>(
     const {params} = opts;
     return {
       resourceType: 'Account',
-      id: random.uuid(),
+      id: datatype.uuid(),
       status: 'active',
       ...params,
     } as R4.IAccount;

@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 
 /**
  * Defines a Factory for generating FHIR ObservationDefinitions.
@@ -20,11 +20,11 @@ export const observationDefinitionFactory = Factory.define<R4.IObservationDefini
     const {params} = opts;
     return {
       resourceType: 'ObservationDefinition',
-      id: random.uuid(),
+      id: datatype.uuid(),
       code: {
         coding: [
           {
-            code: random.uuid(),
+            code: datatype.uuid(),
             display: 'Coding code display',
             system: 'https://imaware.health/system',
           },

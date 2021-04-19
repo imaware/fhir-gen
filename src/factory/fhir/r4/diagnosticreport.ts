@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {randomEnum} from '../../../util/random';
 
 /**
@@ -18,7 +18,7 @@ export const diagnosticReportFactory = Factory.define<R4.IDiagnosticReport>(
     const {params} = opts;
     return {
       resourceType: 'DiagnosticReport',
-      id: random.uuid(),
+      id: datatype.uuid(),
       status: randomEnum(R4.DiagnosticReportStatusKind),
       ...params,
     } as R4.IDiagnosticReport;

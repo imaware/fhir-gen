@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 
 /**
  * Defines a Factory for generating FHIR Practitioners.
@@ -17,7 +17,7 @@ export const practitionerFactory = Factory.define<R4.IPractitioner>(
     const {params} = opts;
     return {
       resourceType: 'Practitioner',
-      id: random.uuid(),
+      id: datatype.uuid(),
       ...params,
     } as R4.IPractitioner;
   },

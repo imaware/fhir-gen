@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {random, datatype} from 'faker';
 
 const serviceRequestStatuses = [
   'draft',
@@ -39,7 +39,7 @@ export const serviceRequestFactory = Factory.define<R4.IServiceRequest>(
     const {params} = opts;
     return {
       resourceType: 'ServiceRequest',
-      id: random.uuid(),
+      id: datatype.uuid(),
       status: random.arrayElement(serviceRequestStatuses),
       intent: random.arrayElement(serviceRequestIntents),
       subject: {

@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {random} from 'faker';
+import {datatype, random} from 'faker';
 
 export const A1C_LOINC_CODE = '4548-4';
 export const CHOLESTEROL_LOINC_CODE = '74521-3';
@@ -21,10 +21,10 @@ export type LOINC_CODE_TYPE =
 const loincSystem = 'https://loinc.org/';
 export const loincCodes: Array<R4.ICodeableConcept> = [
   {
-    id: random.uuid(),
+    id: datatype.uuid(),
     coding: [
       {
-        id: random.uuid(),
+        id: datatype.uuid(),
         system: loincSystem,
         code: HDL_LOINC_CODE,
         display: 'HDL',
@@ -33,10 +33,10 @@ export const loincCodes: Array<R4.ICodeableConcept> = [
     text: 'HDL',
   } as R4.ICodeableConcept,
   {
-    id: random.uuid(),
+    id: datatype.uuid(),
     coding: [
       {
-        id: random.uuid(),
+        id: datatype.uuid(),
         system: loincSystem,
         code: LDL_LOINC_CODE,
         display: 'LDL',
@@ -45,10 +45,10 @@ export const loincCodes: Array<R4.ICodeableConcept> = [
     text: 'LDL',
   } as R4.ICodeableConcept,
   {
-    id: random.uuid(),
+    id: datatype.uuid(),
     coding: [
       {
-        id: random.uuid(),
+        id: datatype.uuid(),
         system: loincSystem,
         code: CHOLESTEROL_LOINC_CODE,
         display: 'Cholesterol',
@@ -57,10 +57,10 @@ export const loincCodes: Array<R4.ICodeableConcept> = [
     text: 'Cholesterol',
   } as R4.ICodeableConcept,
   {
-    id: random.uuid(),
+    id: datatype.uuid(),
     coding: [
       {
-        id: random.uuid(),
+        id: datatype.uuid(),
         system: loincSystem,
         code: TRIGLYCERIDES_LOINC_CODE,
         display: 'Trigl Bld-mCnc',
@@ -69,10 +69,10 @@ export const loincCodes: Array<R4.ICodeableConcept> = [
     text: 'Trigl Bld-mCnc',
   } as R4.ICodeableConcept,
   {
-    id: random.uuid(),
+    id: datatype.uuid(),
     coding: [
       {
-        id: random.uuid(),
+        id: datatype.uuid(),
         system: loincSystem,
         code: VITD_LOINC_CODE,
         display: 'Vit D+metab SerPl-mCnc',
@@ -81,10 +81,10 @@ export const loincCodes: Array<R4.ICodeableConcept> = [
     text: 'Vit D+metab SerPl-mCnc',
   } as R4.ICodeableConcept,
   {
-    id: random.uuid(),
+    id: datatype.uuid(),
     coding: [
       {
-        id: random.uuid(),
+        id: datatype.uuid(),
         system: loincSystem,
         code: VITB12_LOINC_CODE,
         display: 'Vit B12 Bld-mCnc',
@@ -93,10 +93,10 @@ export const loincCodes: Array<R4.ICodeableConcept> = [
     text: 'Vit B12 Bld-mCnc',
   } as R4.ICodeableConcept,
   {
-    id: random.uuid(),
+    id: datatype.uuid(),
     coding: [
       {
-        id: random.uuid(),
+        id: datatype.uuid(),
         system: loincSystem,
         code: A1C_LOINC_CODE,
         display: 'HbA1c MFr Bld',

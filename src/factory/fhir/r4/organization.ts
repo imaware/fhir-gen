@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {company, random} from 'faker';
+import {company, datatype} from 'faker';
 import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';
 import {addressFactory} from './address';
 
@@ -18,7 +18,7 @@ export const organizationFactory = Factory.define<R4.IOrganization>(
     // Default values, if any
     const {params} = opts;
     // Contact points
-    const numContactPoints = random.number({min: 1, max: 3});
+    const numContactPoints = datatype.number({min: 1, max: 3});
     const contactPoints = contactPointGenerator(
       numContactPoints,
       Array.from(Array(numContactPoints).keys()).map(
@@ -29,7 +29,7 @@ export const organizationFactory = Factory.define<R4.IOrganization>(
     );
     return {
       resourceType: 'Organization',
-      id: random.uuid(),
+      id: datatype.uuid(),
       name: company.companyName(),
       telecom: contactPoints,
       address: [addressFactory.build()] as R4.IAddress[],

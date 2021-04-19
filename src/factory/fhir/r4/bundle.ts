@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
 /**
@@ -16,7 +16,7 @@ export const bundleFactory = Factory.define<R4.IBundle, R4.IBundle>(
     const {params} = opts;
     return {
       resourceType: 'Bundle',
-      id: random.uuid(),
+      id: datatype.uuid(),
       entry: [],
       type: randomEnum(R4.BundleTypeKind),
       ...params,

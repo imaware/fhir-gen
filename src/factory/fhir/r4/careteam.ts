@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
 /**
@@ -16,7 +16,7 @@ export const careTeamFactory = Factory.define<R4.ICareTeam>(
     const {params} = opts;
     return {
       resourceType: 'CareTeam',
-      id: random.uuid(),
+      id: datatype.uuid(),
       status: randomEnum(R4.CareTeamStatusKind),
       ...params,
     } as R4.ICareTeam;

@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {expect} from 'chai';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {DeepPartial} from 'fishery';
 import {observationGenerator} from '../generator/fhir/r4/observation';
 
@@ -27,12 +27,12 @@ describe('ObservationGenerator', () => {
       },
       {
         subject: {
-          reference: `Patient/${random.uuid()}`,
+          reference: `Patient/${datatype.uuid()}`,
         },
       },
       {
         specimen: {
-          reference: `Specimen/${random.uuid()}`,
+          reference: `Specimen/${datatype.uuid()}`,
         },
       },
     ] as Array<DeepPartial<R4.IObservation>>;

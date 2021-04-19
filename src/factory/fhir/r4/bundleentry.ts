@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
 /**
@@ -19,7 +19,7 @@ export const bundleEntryFactory = Factory.define<
   ): R4.IBundle_Entry => {
     // Default values, if any
     const {params} = opts;
-    const id = params.id || random.uuid();
+    const id = params.id || datatype.uuid();
     return {
       id,
       request: {
