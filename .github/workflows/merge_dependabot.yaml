@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: imaware/dependabot-pr-action@master
         with:
-          token: ${{ secrets.ACTIONS_TOKEN }}
+          token: ${{ secrets.BOT_TOKEN }}
           merge-minor: true
           merge-patch: true
