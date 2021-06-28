@@ -3330,9 +3330,9 @@ find-versions@^4.0.0:
     semver-regex "^3.1.2"
 
 fishery@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/fishery/-/fishery-1.2.0.tgz#4a8acda69c912a74cf94bb012cecfdc00def68c1"
-  integrity sha512-0GG029KHF3p8Q0NiAl/ZOK1fvyAprOiHdtRWUNS46x9QXuQhMwzcGLNDbZ7XIEEBowwBmMsw7StkaU0ek9dSbg==
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/fishery/-/fishery-1.3.1.tgz#ca06759167dd2d6ac43d0983ac0a99d7b907b0fc"
+  integrity sha512-Oto2fALKmpijLbNAMHvFTrbIPPn9Ds7olDl17qFU8d9eEiro/32wF3V/6Gq0ApabyYP+VhySKqQLiCtJPMeP1A==
   dependencies:
     lodash.mergewith "^4.6.2"
 
