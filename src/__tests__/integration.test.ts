@@ -21,13 +21,11 @@ describe('Integration', () => {
       } as R4.IReference,
     })[0];
     const dr = diagnosticReportGenerator(1, {
-      result: obs.map(
-        (o: R4.IObservation): R4.IReference => {
-          return {
-            reference: 'Observation' + '/' + o.id,
-          } as R4.IReference;
-        },
-      ) as R4.IReference[],
+      result: obs.map((o: R4.IObservation): R4.IReference => {
+        return {
+          reference: 'Observation' + '/' + o.id,
+        } as R4.IReference;
+      }) as R4.IReference[],
       subject: {
         reference: 'Patient' + '/' + pt.id,
       } as R4.IReference,
