@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory, GeneratorFnOptions} from 'fishery';
-import {random} from 'faker';
+import {datatype} from 'faker';
 
 /**
  * Defines a Factory for generating FHIR Specimen.
@@ -15,7 +15,7 @@ export const specimenFactory = Factory.define<R4.ISpecimen>(
     const {params} = opts;
     return {
       resourceType: 'Specimen',
-      id: random.uuid(),
+      id: datatype.uuid(),
       ...params,
     } as R4.ISpecimen;
   },

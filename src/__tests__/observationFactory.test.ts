@@ -53,7 +53,7 @@ describe('ObservationFactory', () => {
     expect(obs.status).to.exist;
     expect(obs.status).to.equal(preSets.status);
     expect(obs.code).to.exist;
-    expect(obs.code).to.equal(preSets.code);
+    expect(obs.code).to.deep.equal(preSets.code);
     const code = loincCodes[0].coding?.[0].code as LOINC_CODE_TYPE;
     const obsValueFn = biomarkerValueMap.get(code);
     if (!obsValueFn) {
