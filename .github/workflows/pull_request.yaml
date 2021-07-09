@@ -11,7 +11,7 @@ jobs:
       - id: npm-setup
         uses: actions/setup-node@v2.2.0
         with:
-          node-version: '14'
+          node-version: '16'
       - id: audit
         run: yarn audit --groups dependencies
   commitlint:
@@ -31,7 +31,7 @@ jobs:
       - id: npm-setup
         uses: actions/setup-node@v2.2.0
         with:
-          node-version: '14.x'
+          node-version: '16'
           registry-url: 'https://registry.npmjs.org'
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
