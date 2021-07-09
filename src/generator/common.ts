@@ -16,11 +16,9 @@ export const common = <T>(
   params: DeepPartial<T> | Array<DeepPartial<T>> = {},
 ): Array<T> => {
   if (Array.isArray(params)) {
-    return params.map(
-      (v: DeepPartial<T>): T => {
-        return factory.build(v);
-      },
-    );
+    return params.map((v: DeepPartial<T>): T => {
+      return factory.build(v);
+    });
   }
   return factory.buildList(n, params as DeepPartial<T>);
 };

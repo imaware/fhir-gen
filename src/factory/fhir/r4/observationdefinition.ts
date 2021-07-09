@@ -9,29 +9,30 @@ import {datatype} from 'faker';
  *
  * @returns {R4.IObservationDefinition} - a FHIR ObservationDefinition
  */
-export const observationDefinitionFactory = Factory.define<R4.IObservationDefinition>(
-  (
-    opts: GeneratorFnOptions<
-      R4.IObservationDefinition,
-      R4.IObservationDefinition
-    >,
-  ): R4.IObservationDefinition => {
-    // Default values, if any
-    const {params} = opts;
-    return {
-      resourceType: 'ObservationDefinition',
-      id: datatype.uuid(),
-      code: {
-        coding: [
-          {
-            code: datatype.uuid(),
-            display: 'Coding code display',
-            system: 'https://imaware.health/system',
-          },
-        ],
-        text: 'Coding code text',
-      },
-      ...params,
-    } as R4.IObservationDefinition;
-  },
-);
+export const observationDefinitionFactory =
+  Factory.define<R4.IObservationDefinition>(
+    (
+      opts: GeneratorFnOptions<
+        R4.IObservationDefinition,
+        R4.IObservationDefinition
+      >,
+    ): R4.IObservationDefinition => {
+      // Default values, if any
+      const {params} = opts;
+      return {
+        resourceType: 'ObservationDefinition',
+        id: datatype.uuid(),
+        code: {
+          coding: [
+            {
+              code: datatype.uuid(),
+              display: 'Coding code display',
+              system: 'https://imaware.health/system',
+            },
+          ],
+          text: 'Coding code text',
+        },
+        ...params,
+      } as R4.IObservationDefinition;
+    },
+  );
