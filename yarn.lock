@@ -1245,14 +1245,14 @@
     "@types/chai" "*"
 
 "@types/chai@*", "@types/chai@^4.2.14":
-  version "4.2.20"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.20.tgz#bb02e7d02b6c452f6bbb8fe575b56e180644de67"
-  integrity sha512-E121rHk/4BlcEwANZOwcHl8L/Sl0zyIFXJoyggXkl7FCT/4MTf5u25f+qiphe0V5ELaFIkCptgvbf4whCJUVMA==
+  version "4.2.21"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.21.tgz#9f35a5643129df132cf3b5c1ec64046ea1af0650"
+  integrity sha512-yd+9qKmJxm496BOV9CMNaey8TWsikaZOwMRwPHQIjcOJM9oV+fi9ZMNw3JsVnbEEbo2gRTDnGEBv8pjyn67hNg==
 
 "@types/faker@^5.5.3":
-  version "5.5.6"
-  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-5.5.6.tgz#039b700a9d8ad9150ecc842bf5e717e2027b6f75"
-  integrity sha512-UCRj0kLg4sXs2XFVm48OU/wIjyJZkpRkwxhRGVQb5l5GmemkeW22WTz9iiDhYPBUqTzDsIWzhFRuF/4DD5+q2Q==
+  version "5.5.7"
+  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-5.5.7.tgz#52aa3ad6ead3642b7c54e1e87e9e3ff5b10b3873"
+  integrity sha512-ejzb61Q5zQTtS0ZIafgQ7ahO5ACzmGhG5PfX2hxWyth3k0/aysb4ZOxKQB8DbzwSPppA5jmFBwqnBxjv5hqI5Q==
 
 "@types/json-schema@^7.0.7":
   version "7.0.7"
