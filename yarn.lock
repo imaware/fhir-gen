@@ -1067,9 +1067,9 @@
     yargs "^8.0.2"
 
 "@imaware/ts-fhir-types@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.3.tgz#d03eba8eeb7c508d7870190fafdc94ee43efe954"
-  integrity sha512-OPpDWX1QT0NaZSZu8J8Zg7C551LKeDh8O1FGKqLZQUQhhMn/GN3WGF9iW3AVG2p5qntCq9HzleSAzQb67N/i/Q==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.4.tgz#3495cccc0412d1f59fbf0611e2c67ffa1cac92e7"
+  integrity sha512-WlW6fnFo9zYRaPTij2tUQW6uHWi+WBh76qzWmmWrKN2qbxXeT9VM+0veZjD66NtBBTFf/3updbtaiIY+t9mirA==
   dependencies:
     fp-ts "^2.8.3"
     io-ts "^2.0.0"
