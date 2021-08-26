@@ -1067,9 +1067,9 @@
     yargs "^8.0.2"
 
 "@imaware/ts-fhir-types@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.3.tgz#d03eba8eeb7c508d7870190fafdc94ee43efe954"
-  integrity sha512-OPpDWX1QT0NaZSZu8J8Zg7C551LKeDh8O1FGKqLZQUQhhMn/GN3WGF9iW3AVG2p5qntCq9HzleSAzQb67N/i/Q==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.4.tgz#3495cccc0412d1f59fbf0611e2c67ffa1cac92e7"
+  integrity sha512-WlW6fnFo9zYRaPTij2tUQW6uHWi+WBh76qzWmmWrKN2qbxXeT9VM+0veZjD66NtBBTFf/3updbtaiIY+t9mirA==
   dependencies:
     fp-ts "^2.8.3"
     io-ts "^2.0.0"
@@ -4036,9 +4036,9 @@ humanize-ms@^1.2.1:
     ms "^2.0.0"
 
 husky@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-7.0.1.tgz#579f4180b5da4520263e8713cc832942b48e1f1c"
-  integrity sha512-gceRaITVZ+cJH9sNHqx5tFwbzlLCVxtVZcusME8JYQ8Edy5mpGDOqD8QBCdMhpyo9a+JXddnujQ4rpY2Ff9SJA==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-7.0.2.tgz#21900da0f30199acca43a46c043c4ad84ae88dff"
+  integrity sha512-8yKEWNX4z2YsofXAMT7KvA1g8p+GxtB1ffV8XtpAEGuXNAbCV5wdNKH+qTpw8SM9fh4aMPDR+yQuKfgnreyZlg==
 
 iconv-lite@^0.6.2:
   version "0.6.2"
