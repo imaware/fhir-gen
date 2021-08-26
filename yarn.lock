@@ -1067,9 +1067,9 @@
     yargs "^8.0.2"
 
 "@imaware/ts-fhir-types@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.3.tgz#d03eba8eeb7c508d7870190fafdc94ee43efe954"
-  integrity sha512-OPpDWX1QT0NaZSZu8J8Zg7C551LKeDh8O1FGKqLZQUQhhMn/GN3WGF9iW3AVG2p5qntCq9HzleSAzQb67N/i/Q==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.4.tgz#3495cccc0412d1f59fbf0611e2c67ffa1cac92e7"
+  integrity sha512-WlW6fnFo9zYRaPTij2tUQW6uHWi+WBh76qzWmmWrKN2qbxXeT9VM+0veZjD66NtBBTFf/3updbtaiIY+t9mirA==
   dependencies:
     fp-ts "^2.8.3"
     io-ts "^2.0.0"
@@ -5593,9 +5593,9 @@ mkdirp@^1.0.4:
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 mocha@^9.0.0:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-9.0.2.tgz#e84849b61f406a680ced85af76425f6f3108d1a0"
-  integrity sha512-FpspiWU+UT9Sixx/wKimvnpkeW0mh6ROAKkIaPokj3xZgxeRhcna/k5X57jJghEr8X+Cgu/Vegf8zCX5ugSuTA==
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-9.1.0.tgz#0a7aa6fc4f59d1015d4e11747d9104b752553c67"
+  integrity sha512-Kjg/XxYOFFUi0h/FwMOeb6RoroiZ+P1yOfya6NK7h3dNhahrJx1r2XIT3ge4ZQvJM86mdjNA+W5phqRQh7DwCg==
   dependencies:
     "@ungap/promise-all-settled" "1.1.2"
     ansi-colors "4.1.1"
