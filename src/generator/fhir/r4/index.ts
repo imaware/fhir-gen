@@ -9,6 +9,7 @@ export * from './chargeitem';
 export * from './contactpoint';
 export * from './diagnosticreport';
 export * from './invoice';
+export * from './location';
 export * from './observation';
 export * from './observationdefinition';
 export * from './organization';

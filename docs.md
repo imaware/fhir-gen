@@ -30,6 +30,8 @@
 <dd><p>Defines a Factory for generating FHIR DiagnosticReports.</p></dd>
 <dt><a href="#invoiceFactory">invoiceFactory</a> ⇒ <code>R4.IInvoice</code></dt>
 <dd><p>Defines a Factory for generating FHIR Invoices.</p></dd>
+<dt><a href="#locationFactory">locationFactory</a> ⇒ <code>R4.ILocation</code></dt>
+<dd><p>Defines a Factory for generating FHIR Locations.</p></dd>
 <dt><a href="#observationFactory">observationFactory</a> ⇒ <code>R4.IObservation</code></dt>
 <dd><p>Defines a Factory for generating FHIR Observations.</p></dd>
 <dt><a href="#observationDefinitionFactory">observationDefinitionFactory</a> ⇒ <code>R4.IObservationDefinition</code></dt>
@@ -77,6 +79,8 @@
 <dd><p>Creates an Array of size n containing FHIR DiagnosticReport objects.</p></dd>
 <dt><a href="#invoiceGenerator">invoiceGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IInvoice&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Invoice objects.</p></dd>
+<dt><a href="#locationGenerator">locationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.ILocation&gt;</code></dt>
+<dd><p>Creates an Array of size n containing FHIR Location objects.</p></dd>
 <dt><a href="#observationGenerator">observationGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IObservation&gt;</code></dt>
 <dd><p>Creates an Array of size n containing FHIR Observation objects.</p></dd>
 <dt><a href="#observationDefinitionGenerator">observationDefinitionGenerator(n, defaults)</a> ⇒ <code>Array.&lt;R4.IObservationDefinition&gt;</code></dt>
@@ -273,6 +277,21 @@
 | Param | Type | Description |
 | --- | --- | --- |
 | opts | <code>GeneratorFnOptions.&lt;R4.IInvoice, R4.IInvoice&gt;</code> | <p>Options for generating the Invoice object.</p> |
+
+<a name="locationFactory"></a>
+
+## locationFactory ⇒ <code>R4.ILocation</code>
+
+<p>Defines a Factory for generating FHIR Locations.</p>
+
+**Kind**: global constant  
+**Returns**: <code>R4.ILocation</code> - <ul>
+<li>a FHIR Location</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| opts | <code>GeneratorFnOptions.&lt;R4.ILocation, R4.ILocation&gt;</code> | <p>Options for generating the Location object.</p> |
 
 <a name="observationFactory"></a>
 
@@ -598,6 +617,22 @@
 | --- | --- | --- |
 | n | <code>number</code> | <p>The number of FHIR Invoices to generate.</p> |
 | defaults | <code>DeepPartial.&lt;R4.IInvoice&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.IInvoice&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
+
+<a name="locationGenerator"></a>
+
+## locationGenerator(n, defaults) ⇒ <code>Array.&lt;R4.ILocation&gt;</code>
+
+<p>Creates an Array of size n containing FHIR Location objects.</p>
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;R4.ILocation&gt;</code> - <ul>
+<li>The Array of FHIR locations.</li>
+</ul>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>number</code> | <p>The number of FHIR Locations to generate.</p> |
+| defaults | <code>DeepPartial.&lt;R4.ILocation&gt;</code> \| <code>Array.&lt;DeepPartial.&lt;R4.ILocation&gt;&gt;</code> | <p>A subset of default properties for the generated objects.</p> |
 
 <a name="observationGenerator"></a>
 
