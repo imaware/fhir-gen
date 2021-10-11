@@ -70,6 +70,10 @@
     "source-map-support": "^0.5.19",
     "typescript": "^4.2.3"
   },
+  "resolutions": {
+    "ansi-regex": "^5.0.1",
+    "underscore": "^1.12.1"
+  },
   "publishConfig": {
     "access": "public"
   },
