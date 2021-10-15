@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
       - id: npm-setup
         uses: actions/setup-node@v2.4.1
         with:
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
         with:
           fetch-depth: 0
       - id: commit-lint
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
       - id: npm-setup
         uses: actions/setup-node@v2.4.1
         with:
