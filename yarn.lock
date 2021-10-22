@@ -3177,10 +3177,10 @@ find-versions@^4.0.0:
   dependencies:
     semver-regex "^3.1.2"
 
-fishery@^1.2.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/fishery/-/fishery-1.4.0.tgz#5a74f31ebc189cf40bb78a32abdc1e8e6b905468"
-  integrity sha512-uzPsEWtoHluyqgk9hC/MzMbm42NPWmDWjbdzMRLuJ+jxmAHo+nDbiI3zk2S+HQFXme/VlNnPsNYZQBryrbCTLw==
+fishery@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/fishery/-/fishery-2.0.0.tgz#4688ffed9c0b09b1fcc07bf1d32105a989705b74"
+  integrity sha512-cthWZUgcIgGEz1lVDpUZtV2UGmCk1yjiMl0sMHfAlcXZdUeuGB25QeOTujImn9kuySuItmp8zNoxf0gLAtGRqw==
   dependencies:
     lodash.mergewith "^4.6.2"
 

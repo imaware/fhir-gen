@@ -36,7 +36,7 @@
   "dependencies": {
     "@imaware/ts-fhir-types": "^1.0.3",
     "faker": "^5.5.3",
-    "fishery": "^1.2.0"
+    "fishery": "^2.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
