@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
@@ -11,9 +11,7 @@ import {randomEnum} from '../../../util';
  * @returns {R4.IActivityDefinition} - a FHIR ActivityDefinition
  */
 export const activityDefinitionFactory = Factory.define<R4.IActivityDefinition>(
-  (
-    opts: GeneratorFnOptions<R4.IActivityDefinition, R4.IActivityDefinition>,
-  ): R4.IActivityDefinition => {
+  (opts): R4.IActivityDefinition => {
     // Default values, if any
     const {params} = opts;
     return {

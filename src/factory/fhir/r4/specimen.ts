@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 
 /**
@@ -10,7 +10,7 @@ import {datatype} from 'faker';
  * @returns {R4.ISpecimen} - a FHIR Specimen
  */
 export const specimenFactory = Factory.define<R4.ISpecimen>(
-  (opts: GeneratorFnOptions<R4.ISpecimen, R4.ISpecimen>): R4.ISpecimen => {
+  (opts): R4.ISpecimen => {
     // Default values, if any
     const {params} = opts;
     return {

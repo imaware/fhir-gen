@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 import {randomEnum} from '../../../util/random';
 
@@ -11,9 +11,7 @@ import {randomEnum} from '../../../util/random';
  * @returns {R4.IDiagnosticReport} - a FHIR DiagnosticReport
  */
 export const diagnosticReportFactory = Factory.define<R4.IDiagnosticReport>(
-  (
-    opts: GeneratorFnOptions<R4.IDiagnosticReport, R4.IDiagnosticReport>,
-  ): R4.IDiagnosticReport => {
+  (opts): R4.IDiagnosticReport => {
     // Default values, if any
     const {params} = opts;
     return {

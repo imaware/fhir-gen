@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 
 /**
@@ -11,12 +11,7 @@ import {datatype} from 'faker';
  */
 export const observationDefinitionFactory =
   Factory.define<R4.IObservationDefinition>(
-    (
-      opts: GeneratorFnOptions<
-        R4.IObservationDefinition,
-        R4.IObservationDefinition
-      >,
-    ): R4.IObservationDefinition => {
+    (opts): R4.IObservationDefinition => {
       // Default values, if any
       const {params} = opts;
       return {

@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 
 /**
@@ -10,7 +10,7 @@ import {datatype} from 'faker';
  * @returns {R4.IAccount} - a FHIR Account
  */
 export const accountFactory = Factory.define<R4.IAccount>(
-  (opts: GeneratorFnOptions<R4.IAccount, R4.IAccount>): R4.IAccount => {
+  (opts): R4.IAccount => {
     // Default values, if any
     const {params} = opts;
     return {

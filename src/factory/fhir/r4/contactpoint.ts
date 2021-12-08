@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {internet, phone, datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
@@ -11,9 +11,7 @@ import {randomEnum} from '../../../util';
  * @returns {R4.IContactPoint} - a FHIR ContactPoint
  */
 export const contactPointFactory = Factory.define<R4.IContactPoint>(
-  (
-    opts: GeneratorFnOptions<R4.IContactPoint, R4.IContactPoint>,
-  ): R4.IContactPoint => {
+  (opts): R4.IContactPoint => {
     // Default values, if any
     const {params} = opts;
     const system = params.system || randomEnum(R4.ContactPointSystemKind);

@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
@@ -11,9 +11,7 @@ import {randomEnum} from '../../../util';
  * @returns {R4.IPlanDefinition} - a FHIR PlanDefinition
  */
 export const planDefinitionFactory = Factory.define<R4.IPlanDefinition>(
-  (
-    opts: GeneratorFnOptions<R4.IPlanDefinition, R4.IPlanDefinition>,
-  ): R4.IPlanDefinition => {
+  (opts): R4.IPlanDefinition => {
     // Default values, if any
     const {params} = opts;
     return {

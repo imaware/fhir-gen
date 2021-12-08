@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
@@ -11,7 +11,7 @@ import {randomEnum} from '../../../util';
  * @returns {R4.IInvoice} - a FHIR Invoice
  */
 export const invoiceFactory = Factory.define<R4.IInvoice, R4.IInvoice>(
-  (opts: GeneratorFnOptions<R4.IInvoice, R4.IInvoice>): R4.IInvoice => {
+  (opts): R4.IInvoice => {
     // Default values, if any
     const {params} = opts;
     return {
