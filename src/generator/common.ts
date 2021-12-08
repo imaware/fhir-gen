@@ -13,7 +13,7 @@ import {DeepPartial, Factory} from 'fishery';
 export const common = <T>(
   factory: Factory<T>,
   n: number,
-  params: DeepPartial<T> | Array<DeepPartial<T>> = {},
+  params: DeepPartial<T> | Array<DeepPartial<T>> = {} as DeepPartial<T>,
 ): Array<T> => {
   if (Array.isArray(params)) {
     return params.map((v: DeepPartial<T>): T => {

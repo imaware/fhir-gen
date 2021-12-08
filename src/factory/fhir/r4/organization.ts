@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {company, datatype} from 'faker';
 import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';
 import {addressFactory} from './address';
@@ -12,9 +12,7 @@ import {addressFactory} from './address';
  * @returns {R4.IOrganization} - a FHIR Organization
  */
 export const organizationFactory = Factory.define<R4.IOrganization>(
-  (
-    opts: GeneratorFnOptions<R4.IOrganization, R4.IOrganization>,
-  ): R4.IOrganization => {
+  (opts): R4.IOrganization => {
     // Default values, if any
     const {params} = opts;
     // Contact points

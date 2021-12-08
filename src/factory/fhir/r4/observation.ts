@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 import {randomEnum, randomLoincCode} from '../../../util/random';
 import {randomObservationValues} from '../../../util/random/observationValues';
@@ -12,9 +12,7 @@ import {randomObservationValues} from '../../../util/random/observationValues';
  * @returns {R4.IObservation} - a FHIR Observation
  */
 export const observationFactory = Factory.define<R4.IObservation>(
-  (
-    opts: GeneratorFnOptions<R4.IObservation, R4.IObservation>,
-  ): R4.IObservation => {
+  (opts): R4.IObservation => {
     // Default values, if any
     const {params} = opts;
     const loincCode = (params.code as R4.ICodeableConcept) || randomLoincCode();

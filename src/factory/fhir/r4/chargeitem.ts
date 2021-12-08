@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
@@ -11,9 +11,7 @@ import {randomEnum} from '../../../util';
  * @returns {R4.IChargeItem} - a FHIR ChargeItem
  */
 export const chargeItemFactory = Factory.define<R4.IChargeItem, R4.IChargeItem>(
-  (
-    opts: GeneratorFnOptions<R4.IChargeItem, R4.IChargeItem>,
-  ): R4.IChargeItem => {
+  (opts): R4.IChargeItem => {
     // Default values, if any
     const {params} = opts;
     return {

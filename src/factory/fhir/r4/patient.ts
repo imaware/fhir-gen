@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {date, name, datatype} from 'faker';
 import {addressFactory} from './address';
 import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';
@@ -12,7 +12,7 @@ import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';
  * @returns {R4.IPatient} - a FHIR Patient
  */
 export const patientFactory = Factory.define<R4.IPatient>(
-  (opts: GeneratorFnOptions<R4.IPatient, R4.IPatient>): R4.IPatient => {
+  (opts): R4.IPatient => {
     // Default values, if any
     const {params} = opts;
     // Given name

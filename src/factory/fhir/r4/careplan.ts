@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype, random} from 'faker';
 
 const careplanStatuses = [
@@ -20,7 +20,7 @@ const careplanStatuses = [
  * @returns {R4.ICarePlan} - a FHIR CarePlan
  */
 export const carePlanFactory = Factory.define<R4.ICarePlan>(
-  (opts: GeneratorFnOptions<R4.ICarePlan, R4.ICarePlan>): R4.ICarePlan => {
+  (opts): R4.ICarePlan => {
     // Default values, if any
     const {params} = opts;
     return {

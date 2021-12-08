@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {random, datatype} from 'faker';
 
 const serviceRequestStatuses = [
@@ -32,9 +32,7 @@ const serviceRequestIntents = [
  * @returns {R4.IServiceRequest} - a FHIR ServiceRequest
  */
 export const serviceRequestFactory = Factory.define<R4.IServiceRequest>(
-  (
-    opts: GeneratorFnOptions<R4.IServiceRequest, R4.IServiceRequest>,
-  ): R4.IServiceRequest => {
+  (opts): R4.IServiceRequest => {
     // Default values, if any
     const {params} = opts;
     return {

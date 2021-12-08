@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {datatype} from 'faker';
 import {randomEnum} from '../../../util';
 
@@ -11,7 +11,7 @@ import {randomEnum} from '../../../util';
  * @returns {R4.ICareTeam} - a FHIR CareTeam
  */
 export const careTeamFactory = Factory.define<R4.ICareTeam>(
-  (opts: GeneratorFnOptions<R4.ICareTeam, R4.ICareTeam>): R4.ICareTeam => {
+  (opts): R4.ICareTeam => {
     // Default values, if any
     const {params} = opts;
     return {

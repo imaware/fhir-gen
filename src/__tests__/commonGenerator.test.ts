@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {Factory, GeneratorFnOptions} from 'fishery';
+import {Factory} from 'fishery';
 import {common} from '../generator/common';
 
 describe('CommonGenerator', () => {
@@ -15,9 +15,7 @@ describe('CommonGenerator', () => {
   });
   it('correctly creates a list of 5 numbers with different presets', async () => {
     const nums = common(
-      Factory.define<number, number>(
-        (opts: GeneratorFnOptions<number, number>): number => opts.sequence,
-      ),
+      Factory.define<number, number>((opts): number => opts.sequence),
       10,
       [1, 2, 3, 4, 5],
     );
