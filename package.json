@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@imaware/ts-fhir-types": "^1.0.3",
-    "faker": "^5.5.3",
+    "faker": "^6.6.6",
     "fishery": "^2.1.0"
   },
   "devDependencies": {
