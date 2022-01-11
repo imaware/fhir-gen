@@ -1001,9 +1001,9 @@
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
 "@imaware/ts-fhir-types@^1.0.3":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.4.tgz#3495cccc0412d1f59fbf0611e2c67ffa1cac92e7"
-  integrity sha512-WlW6fnFo9zYRaPTij2tUQW6uHWi+WBh76qzWmmWrKN2qbxXeT9VM+0veZjD66NtBBTFf/3updbtaiIY+t9mirA==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@imaware/ts-fhir-types/-/ts-fhir-types-1.0.5.tgz#35e62bd0b9fdee8107e2047d2cc6c1a274aadd69"
+  integrity sha512-DhM5tW+CQCdy3WyYMDDyajpFesxx+QnSoFytBA5+wT+/9YYlL7YBXriT2Dx+/ERakYGAapscDwVygi82Sh079w==
   dependencies:
     fp-ts "^2.8.3"
     io-ts "^2.0.0"
