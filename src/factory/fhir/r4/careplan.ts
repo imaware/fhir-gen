@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory} from 'fishery';
-import {datatype, random} from 'faker';
+import {datatype, random} from '@faker-js/faker/locale/en';
 
 const careplanStatuses = [
   'draft',

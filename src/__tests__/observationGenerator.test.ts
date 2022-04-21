@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {expect} from 'chai';
-import {datatype} from 'faker';
+import {datatype} from '@faker-js/faker/locale/en';
 import {DeepPartial} from 'fishery';
 import {observationGenerator} from '../generator/fhir/r4/observation';
 
