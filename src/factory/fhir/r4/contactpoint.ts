@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory} from 'fishery';
-import {internet, phone, datatype} from 'faker';
+import {internet, phone, datatype} from '@faker-js/faker/locale/en';
 import {randomEnum} from '../../../util';
 
 /**

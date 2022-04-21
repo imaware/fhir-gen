@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {datatype, random} from 'faker';
+import {datatype, random} from '@faker-js/faker/locale/en';
 
 export const A1C_LOINC_CODE = '4548-4';
 export const CHOLESTEROL_LOINC_CODE = '74521-3';

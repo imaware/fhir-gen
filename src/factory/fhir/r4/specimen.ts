@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory} from 'fishery';
-import {datatype} from 'faker';
+import {datatype} from '@faker-js/faker/locale/en';
 
 /**
  * Defines a Factory for generating FHIR Specimen.

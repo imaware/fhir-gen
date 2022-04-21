@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory} from 'fishery';
-import {address as fakerAddress, datatype} from 'faker';
+import {address as fakerAddress, datatype} from '@faker-js/faker/locale/en';
 
 /**
  * Defines a Factory for generating FHIR Addresses.
@@ -13,7 +13,7 @@ export const addressFactory = Factory.define<R4.IAddress, R4.IAddress>(
   (opts): R4.IAddress => {
     // Default values, if any
     const {params} = opts;
-    const state = fakerAddress.state(true);
+    const state = fakerAddress.state();
     const addressLines = [] as string[];
     // First Line
     addressLines.push(fakerAddress.streetAddress());

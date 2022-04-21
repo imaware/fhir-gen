@@ -1,5 +1,5 @@
 import {R4} from '@imaware/ts-fhir-types';
-import {datatype} from 'faker';
+import {datatype} from '@faker-js/faker/locale/en';
 import {DeepPartial} from 'fishery';
 import {
   A1C_LOINC_CODE,

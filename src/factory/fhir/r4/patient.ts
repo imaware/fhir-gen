@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory} from 'fishery';
-import {date, name, datatype} from 'faker';
+import {date, name, datatype} from '@faker-js/faker/locale/en';
 import {addressFactory} from './address';
 import {contactPointGenerator} from '../../../generator/fhir/r4/contactpoint';
 

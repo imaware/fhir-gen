@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory} from 'fishery';
-import {company, datatype} from 'faker';
+import {company, datatype} from '@faker-js/faker/locale/en';
 import {addressFactory} from './address';
 
 /**

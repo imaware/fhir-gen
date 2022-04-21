@@ -1,6 +1,6 @@
 import {R4} from '@imaware/ts-fhir-types';
 import {Factory} from 'fishery';
-import {random, datatype} from 'faker';
+import {random, datatype} from '@faker-js/faker/locale/en';
 
 const serviceRequestStatuses = [
   'draft',
