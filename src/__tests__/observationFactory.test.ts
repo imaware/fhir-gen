@@ -3,7 +3,7 @@ import {expect} from 'chai';
 import {biomarkerValueMap, loincCodes, LOINC_CODE_TYPE} from '../util';
 import {observationFactory} from '../factory/fhir/r4/observation';
 import {uuidV4Regex} from './helpers/patterns';
-import faker from '@faker-js/faker';
+import faker from '@faker-js/faker/locale/en';
 
 faker.seed(123); // Seed faker for consistency across tests
 
