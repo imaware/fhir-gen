@@ -67,7 +67,7 @@
     "rimraf": "^3.0.2",
     "semantic-release": "^19.0.2",
     "source-map-support": "^0.5.19",
-    "typescript": "^4.2.3"
+    "typescript": "4.8.3"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",
